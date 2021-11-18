@@ -1,0 +1,109 @@
+.edit_part_user {
+  background: #f0f5fa;
+  width: 1208px;
+  height: 1361px;
+  margin-top: 70px;
+  text-align: center;
+}
+.edit_profile_main {
+  margin-left: 87px;
+  margin-right: 73px;
+  width: 1208px;
+  margin-top: 45px;
+}
+.edit_input {
+  padding-left: 20px;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  width: 763px;
+  color: #C4C4C4;
+  font-size: 20px;
+  font-weight: 500;
+  height: 109px;
+  border-radius: 7px;
+  border: 3px solid rgba(255, 193, 6, 1);
+  margin-top: 20px;
+}
+.save_edit_profile {
+  width: 223px;
+  height: 56px;
+  border-radius: 7px;
+  background: #0055b3;
+  border: #0055b3;
+  font-weight: 800;
+  font-size: 24px;
+  margin-top: 64px;
+  color: #fff;
+}
+.user_input_area_ep {
+  margin-top: 0px;
+}
+
+.profile_picture_edit_profile img {
+  margin-top: 128px;
+  border-radius: 50%;
+  width: 244px;
+  height: 244px;
+}
+
+.pencil_edit {
+  position: relative;
+  top: -27px;
+  left: -63px;
+}
+.edit_pencil_area {
+  width: 11%;
+  position: relative;
+  top: -104px;
+  left: 662px;
+}
+.triangle_ep {
+  position: relative;
+  top: 1044px;
+  left: 33px;
+}
+.circle_ep {
+  position: relative;
+  top: 332px;
+  left: 230px;
+}
+.triangle_right_ep {
+  top: 611px;
+  position: relative;
+  left: 803px;
+}
+
+.edit_profile_one h3{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/*  RESPONSIVE START */
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1300px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 479px) {
+}
+@media screen and (max-width: 374px) {
+}

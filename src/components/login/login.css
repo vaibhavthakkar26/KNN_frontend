@@ -1,0 +1,84 @@
+body{
+    /* background-color: rgb(226 224 224); */
+}
+.sign_in{
+    max-width: 90%;
+    height: 510px;
+    margin: 200px;
+    margin-bottom: 424px;
+}
+.sign_in_main{
+    display: flex;
+    height: 861px;
+    width: 1026px;   
+}
+.input_signin{
+    width: 428px;
+    height: 62px;
+    padding-left: 18px;
+    border: 3px solid #FFC106;
+    border-radius: 7px;
+    color: #434343;
+    margin-top: 4px;
+    margin-bottom: 35px;
+}
+.email_password_section{
+    padding-left: 31px;
+}
+.Login_head{
+    color: #0055B3;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+    padding-left: 30px;
+    padding-top: 138px;
+}
+.Login_imagesec{
+    width: 525px;
+}
+.Login_section{
+    width: 505px;
+    margin-left: -26px;
+    background-color: rgb(255, 255, 255);
+}
+.cheackBox_section{
+    width: 91%;
+    height: 29px;
+}
+.Login_button{
+    color: white;
+    background-color: blue;
+    width: 437px;
+    font-size: 24px;
+    font-weight: 500;   
+    margin-top: 20px;
+    height: 46px;
+    border: none;
+    border-radius: 7px;
+}
+
+.Login_restpassword{
+    color: #0055B3;
+    float: right;
+    font-size: 15px;
+
+}
+.Login_image{
+    width: 525px;
+    height: 860px;
+}
+.email_ID{
+    margin-top: 24px;
+}
+.email_password_section label{
+    font-weight: 500;
+    font-size: 20px;
+}
+.Signin_footer_text{
+    padding-left: 104px;
+    margin-top: 20px;
+    font-size:  18px;
+    font-weight: 500;
+    font-style: normal;
+    
+}

@@ -1,0 +1,48 @@
+.with_deposit_main {
+  width: 1110px;
+  height: auto;
+  background: #e9f1f8;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.deposit_with_deposit_heading {
+  text-align: left;
+  margin-left: 69px;
+  padding-bottom: 10px;
+  padding-top: 51px;
+  color: #0055b3;
+}
+.payment_with_deposit {
+  margin-left: 117px;
+}
+.payment_with_deposit h2 {
+  font-style: normal;
+  text-align: left;
+  font-size: 42px;
+}
+.payment_information_deposit {
+  margin-left: 69px;
+  margin-right: 98px;
+}
+.payment_information_deposit h2 {
+  background: #0055b3;
+  padding-left: 143px;
+  color: #fff;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 40px;
+}
+.complete_btn_ {
+  width: 437px;
+  height: 46px;
+  background: #ffc106;
+  border-radius: 7px;
+  font-size: 22px;
+  font-weight: bold;
+  border: #ffc106;
+  margin-top: 20px;
+}
+.complete_btn_area_with_deposit p {
+  padding-bottom: 27px;
+}

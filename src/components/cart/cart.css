@@ -1,0 +1,220 @@
+.cart_item_area{
+    display: flex;
+    margin-top: 47px;
+    margin-left: 182px;
+}
+.cart_book_price{
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+    margin-left: 26px;
+}
+.cart_book_price h3{
+    color: #000000;
+    font-weight: 500;
+    font-size: 24px;
+    text-indent: 2px;
+    text-transform: capitalize;
+}
+.procces_area{
+    float: right;
+}
+
+.quantity_input{
+    text-align: center;
+    width: 33.33%;
+    height: 43px;
+    color: #000000;
+    border: none;
+}
+.quantity_cart{
+    border: 1px solid #C4C4C4;
+    color: blue;
+    margin-left: 256px;
+    margin-top: 6px;
+    max-width: 131px;
+    height: 45px;
+}
+.procced_cart_btn{
+    margin-left: 164px;
+    color: #fff;
+    width: 132px;
+    margin-top: 15px;
+    height: 38px;
+    background: #00C2FF;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+
+    border-radius: 7px;
+
+}
+.plus_cart,.minius_cart{
+    width: 16.33%;
+    background: #fff;
+    border: none;
+    color: #0055B3;
+    width: 33.33%;
+    height: 43px;
+}
+.cart_cancel{
+    float: right;
+    width: 48px;
+    height: 48px;
+    background: rgb(245, 20, 20);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+
+}
+.cart_area_cart{
+    width: 70%;
+}
+.book_details_cart h2{
+    margin-left: 26px;
+    color: #0055B3;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.star_cart{
+    display: flex;
+    margin-left: 26px;
+    color: #0055B3;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+.star_cart h4{
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+.book_details_cart p{
+    margin-left: 18px;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+
+}
+.reviews_cart{
+    margin-left: 31px;
+    
+    
+}
+.like_cart{
+    margin-left: 22px;
+}
+.line_1{
+    margin-left: 26px;
+    border-top: 2px dashed rgb(196, 196, 196);
+}
+.cart_amount_area{
+    background: #FFC106;
+    height: 77px;
+    width: 311px;
+    margin-top: 60px;
+    margin-left: 180px;
+    text-align: center;
+    border-radius: 21px;
+}
+.cart_amount_area h2{
+    padding-top: 16px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+}
+.instruction_member_area{
+    width: 1004px;
+    height: 199px;
+    background: #F2F2F2;
+    border-radius: 21px;
+    margin-left: 180px;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-top: 80px;
+}
+
+.round_circle_cart{    
+    position: relative;
+    top: 40px;
+    right: 960px;
+    z-index: -1;
+
+}
+
+.cart_circle_instruction{
+position: relative;
+left: 1207px;
+top: -260px;
+}
+
+
+.book_delivery_area{
+    display: flex;
+    margin-top: 43px;
+    align-items: center;
+    justify-content: center;
+}
+
+.online_delivery_cart{
+    width: 279px;
+    height: 279px;
+    background: #FFC106;
+    border-radius: 21px;
+}
+
+.online_delivery_cart img{
+    padding: 40px;
+}
+
+.book_cafe{
+    padding: 40px;
+}
+.book_cafe{
+    background: #C4C4C4;
+    margin-left: 67px;
+    border-radius: 21px;
+    width: 279px;
+    height: 279px;
+}
+.main_online_delivery_cart h6{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+
+}
+.main_book_cafe h6{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+}
+.main_book_cafe {
+    text-align: center;
+    width: 31%;
+}
+
+.cart_checkout_btn{
+    margin-top: 42px;
+    text-align: center;
+
+}
+.checkout_btn_cart1{
+    background: #0055B3;
+    width: 311px;
+    height: 92px;
+    border-radius: 21px;
+    border: none;
+    font-size: 35px;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+}
+.play_svg_cart{
+    margin-left: 43px;
+}

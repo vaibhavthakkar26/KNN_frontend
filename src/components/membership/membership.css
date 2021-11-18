@@ -1,0 +1,83 @@
+.main_member_area{
+    background: url("../../assets/image/Rectangle\ 97.png");
+}
+
+.first_section_membership{
+    margin-top: 56px;
+    margin-left: 69px;
+    color: #0055B3;
+}
+
+.payment_platfrom{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.checkout_payment_btn{
+    width: 709px;
+    height: 78px;
+    background: #FFC106;
+    border-radius: 15px;
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left: 367px;
+    margin-bottom: 30px;
+    color: #000000;
+    border: none;
+}
+
+.address_input{
+    background: transparent;
+    margin-right: 65px;
+    margin-left: 69px;
+    margin-top: 32px;
+    color: white;
+    height: 62px;
+    width: 415px;
+    border: 2px solid #FFC106;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.phone_input{
+    background: transparent;
+    border: none;
+    margin-right: 67px;
+    margin-left: 67px;
+    margin-top: 32px;
+    color: white;
+    height: 62px;
+    width: 400px;
+    border: 2px solid #FFC106; 
+    border-radius: 8px;
+    text-align: center;
+}
+
+.address_section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.become_member_btn{
+    width: 437px;
+    height: 46px;
+    background: #0055B3;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 466px;
+    margin-bottom: 30px;
+    color: #fff;
+    border: none;
+}
+
+.member_text{
+    width:  100%;
+    text-align: center;
+    
+}

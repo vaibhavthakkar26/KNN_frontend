@@ -1,0 +1,387 @@
+.regiseter_event_inside {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 157px;
+}
+
+.registerbtn_in_eve {
+  background: #00bd57;
+  width: 382px;
+  margin-left: auto;
+  margin-top: 120px;
+  margin-right: 143px;
+  height: 95px;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 30px;
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+}
+.regiseter_event_inside h3 {
+  color: #0055b3;
+  margin-left: 80px;
+  font-weight: 800;
+  font-size: 52px;
+  margin-top: 102px;
+}
+.event_inside_dis_main {
+  display: flex;
+}
+.one_event_discussion {
+  margin-left: 55px;
+  width: 632px;
+  height: 632px;
+  padding: 60px;
+  line-height: 33px;
+  background: #f4f4f4;
+  border-radius: 21px;
+  margin-top: 120px;
+}
+.one_event_discussion p{
+  font-weight: 800;
+  font-size: 22px;
+  font-style: normal;
+  text-align: justify;
+}
+.event_side_video {
+  width: 604px;
+  height: 632px;
+  margin-top: 120px;
+  margin-left: 21px;
+  border-radius: 21px;
+  margin-right: 56px;
+  background-color: black;
+}
+.event_course_plan {
+  display: flex;
+  padding-left: 80px;
+}
+.event_in_dT,
+.event_in_duration,
+.event_in_shift {
+  width: 393px;
+  height: 318px;
+  background: linear-gradient(180deg, #0055b3 0%, #003066 100%);
+  background-blend-mode: darken;
+  margin-right: 26px;
+  padding: 127px;
+  color: #fff;
+  text-align: center;
+  border-radius: 21px;
+  margin-top: 80px;
+}
+.event_in_dT h3 {
+  width: 175px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 800;
+
+}
+.event_in_duration h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.event_in_shift h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.event_in_shift p {
+  width: 88px;
+}
+.event_in_shift {
+  margin-right: 73px;
+}
+.event_benfits {
+  color: #0055b3;
+  margin-top: 100px;
+  display: flex;
+  font-size: 53px;
+  font-weight: 800;
+  font-style: normal;
+  margin-left: 102px;
+  align-items: center;
+  justify-items: center;
+}
+.event_in_play {
+  position: relative;
+  left: 600px;
+}
+.point_benfints_one {
+  display: flex;
+}
+.benfits_point_event_inside {
+  margin-left: 80px;
+  margin-top: 13px;
+}
+
+.point_benfits_two,
+.point_benfits_three,
+.eligibilty_event_ {
+  width: 1227px;
+  height: 108px;
+  border-radius: 15px;
+  background: #ffc106;
+  margin-top: 24px;
+}
+
+.point_benfits_two h2{
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000 !important;
+}
+.child_one_pbei {
+  padding-left: 76px;
+  padding-top: 27px;
+  padding-right: 46px;
+  padding-bottom: 46px;
+  line-height: 60px;
+  width: 1214px;
+}
+
+.point_benfits_two,
+.point_benfits_three {
+  padding-left: 216px;
+  padding-top: 27px;
+  line-height: 60px;
+}
+.event_inside_eligilty {
+  margin-left: 83px;
+  margin-top: 125px;
+  color: #0055b3;
+}
+.event_inside_eligilty h3{
+  font-size: 52px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.eligibilty_event_ {
+  margin-top: 110px;
+  margin-left: 64px;
+  padding-left: 67px;
+  padding-top: 27px;
+  line-height: 60px;
+}
+.meet_speakers {
+  margin: 91px;
+  margin-left: 89px;
+  color: #0055b3;
+}
+.meet_speakers h2{
+  font-size: 52px;
+  font-weight: 800;
+}
+.company_profile_ {
+  display: flex;
+  margin-left: 55px;
+  overflow-x: auto;
+  margin-right: 50px;
+}
+.cp_two {
+  margin-left: 16px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.cp_one {
+  text-align: center;
+  line-height: 26px;
+}
+.requirements_tools {
+  display: flex;
+  margin-left: 68px;
+  flex-wrap: wrap;
+}
+.event_inside_requirment {
+  margin-top: 89px;
+  margin-left: 71px;
+  font-size: 52px;
+  font-weight:  800;
+  font-style: normal;
+  color: #0055b3;
+  margin-bottom: 76px;
+}
+.requirements_child_one {
+  width: 577px;
+  margin-right: 60px;
+  height: 108px;
+  background: #ffc106;
+  border-radius: 15px;
+  padding-top: 40px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+}
+.requirements_child_one h3{
+  font-size: 30px;
+  font-weight: 800;
+  
+}
+.requirements_child_two {
+  width: 577px;
+  height: 108px;
+  background: #ffc106;
+  border-radius: 15px;
+  padding-top: 40px;
+  text-align: center;
+  line-height: 30px;
+}
+.learning_part {
+  margin-left: 68px;
+  margin-top: 114px;
+  color: #0055b3;
+}
+.learning_part h3{
+  font-size: 52px;
+  font-weight: 800;
+}
+.entrey_fee_area {
+  margin-left: 107px;
+  margin-top: 114px;
+  color: #0055b3;
+}
+.entrey_fee_area h3{
+  font-size: 52px;
+  font-weight: 800;
+
+}
+.courses_part_ {
+  display: flex;
+  margin-left: 68px;
+}
+.course_child_one,
+.course_child_two {
+  width: 577px;
+  height: 108px;
+  margin-right: 60px;
+  text-align: center;
+  border-radius: 15px;
+  background: #ffc106;
+  margin-top: 70px;
+}
+.course_child_two {
+  margin-left: 60px;
+}
+.entrey_fee_disscusion {
+  margin-left: 107px;
+  margin-top: 38px;
+}
+.entrey_fee_disscusion {
+  width: 1096px;
+  height: 108px;
+  text-align: center;
+  margin:  0 auto;
+  background: #ffc106;
+  border-radius: 15px;
+}
+.venuse_part,
+.deadline_part,
+.info_event_inside {
+  margin-left: 107px;
+  margin-top: 85px;
+}
+.event_inside_registerbtn {
+  width: 870px;
+  height: 95px;
+  margin-bottom: 130px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, #00bd57, #00bd57);
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 800;
+  margin-left: 142px;
+  font-style: normal;
+}
+.info_event_inside p {
+  margin-left: 20px;
+  margin-bottom: 105px;
+  width: 1109px;
+  height: 108px;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.event_p_span {
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.deadline_time_area {
+  width: 1163px;
+  height: 108px;
+  text-align: center;
+  border-radius: 15px;
+  background: #0055b3;
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  font-style: normal;
+  padding-left: 66px;
+  padding-top: 27px;
+}
+
+.dd_head {
+  color: #0055b3;
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 42px;
+}
+.venue_head {
+  color: #0055b3;
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 52px;
+  line-height: 54px;
+}
+
+.venue_platform_span {
+  color: #0055b3;
+}
+
+.venue_platform {
+  font-weight: 800;
+  font-size: 40px;
+  font-style: normal;
+}
+.notes {
+  margin-left: 55px;
+  padding-top: 16px;
+  width: 1005px;
+  height: 75px;
+  line-height: 75px;
+  font-weight: 600;
+  font-size: 40px;
+}
+.fee_amount {
+  margin-top: 38px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 75px;
+  margin-left: 107px;
+}
+.course_child_one h3{
+  line-height: 108px;
+  font-size: 30px;
+  font-weight: 800;
+  font-style: normal;
+}
+.course_child_two h1 {
+  margin-left: 120px;
+  margin-top: 40px;
+}

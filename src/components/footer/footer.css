@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer_manisection{
+    width: 100%;
+    display: flex;
+    height: 575px;
+    background: hsl(45, 100%, 51%);
+}
+.footer_section{
+    display: flex;
+}
+.member_ship_step{
+    display: flex;
+}
+.footer_section_one{
+    width: 21%;
+    margin-left: 30px;
+}
+.member_ship_offer{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+.Feedback img{
+    width: 117px;
+    height: 117px;
+    margin-top: 135px;
+}
+
+.book_OR_deposit{
+    display: flex;
+    margin-top: 15px;
+
+}
+
+.knn_feedback_section{
+    margin-top: 27px
+}
+
+.social_media_part{
+    margin-top: 27px;
+}
+.social_media{
+    display: flex;
+    
+}
+.social_media img{
+    padding: 2px;
+    padding-right: 8px;
+    margin-top: 10px;
+}
+
+.deposit_btn{
+    width: 266px;
+    height: 67px;
+    border: none;
+    background: #0055B3;
+    border-radius: 9px; 
+    color: white;
+}
+.about_section p{
+    margin-top: 20px;
+}
+.footer_section_second{
+    margin-top: 61px;
+    margin-left: 70px;
+}
+.become_member h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+._or{
+    margin: 10px;
+}
+
+.books_list h3{
+    float: left;
+    width: 50px;
+}
+
+/* .book_cat{
+    margin-left: 56px;
+    margin-top: 11px;
+} */
+.newspaper {
+    column-count: 2;
+    width: 409px;
+    padding-left: 10px;
+    padding-top: 8px;
+    margin-left: -8px;
+    column-gap: 32px;
+  }
+.newspaper h3{
+    padding-top: 10px;
+}
+.QUick_links li{
+    list-style: none;
+    padding-top: 10px;
+}
+.loction_{
+    margin-top: 220px;
+    margin-left: 90px;
+}
+.about_section{
+    margin-left: 90px;
+}
+.main_categories_list{
+    margin-left: 10px;
+}
+.footer_main{
+    margin-top: 30px;
+}

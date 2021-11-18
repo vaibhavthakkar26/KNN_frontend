@@ -1,0 +1,182 @@
+.your_event_btn{
+    width: 170px;
+    height: 39px;
+    border-radius: 7px;
+    margin-left: 49px;
+    background: #FFEEB9;
+    margin-top: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.event_first_section{
+    margin-left: 158px;
+}
+.event_first_section{
+    display: flex;
+    margin-top: 87px;
+}
+
+.event_search input{
+    width: 554px;
+    padding-left: 14px;
+    height: 50px;
+    border-radius: 7px;
+    border:  2px solid #909090;
+}
+
+.event_1_svg_round{
+    position: absolute;
+    top: 303px;
+    z-index: -1;
+}
+.event_search_svg{
+    position: relative;
+    left: -53px;
+    top: 16px;
+}
+
+.all_events_area{
+    margin-right: 20px;
+    color: #0055B3;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.new_events_area{
+    margin-right: 23px;
+    color: #C4C4C4;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+}
+.events_area{
+    display: flex;
+}
+
+
+.images_event_page{
+    width: 482px;
+    height: 482px;
+    border-radius: 9px;
+}
+
+.event_main_section{
+    margin-left: 158px;
+    margin-top: 71px;
+}
+
+
+.event_discussion_area{
+    margin-left: 50px;
+}
+
+.event_discussion_area h2{
+    color: #0055B3;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.event_discussion_area h3{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    color: #0055B3;
+}
+
+.event_discussion_area p{
+   color: #434343 ;
+   font-size: 12px;
+   text-align: justify;
+}
+
+.event_discussion_area h5{
+    margin-top: 25px;
+}
+
+
+.event_mainreigster_btn{
+    width: 163px;
+    height: 35px;
+    margin-top: 40px;   
+    background: #FFC106;
+    border-radius: 3px;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.event_svg_round{
+    position: absolute;
+}
+
+.event_svg_round img{
+    position: relative;
+    top: -35px;
+    left: 508px;
+}
+
+
+.event2_part_one{
+    margin-left: 102px;
+    margin-top: 200px;
+}
+.event2_part_one h5{
+    color: #0055B3;
+}
+.event2_part_one p{
+    color: #434343;
+}
+
+.event2_part_two{
+    margin-top: 114px;
+    margin-right: 46px;
+    margin-left: 56px;
+}
+
+.svg_play{
+    position: relative;
+    top: 220px;
+    right: 17px;
+}
+
+.event_button_2_register{
+    float: right;
+}
+
+.event2_part_one{
+    /* color: #0055B3; */
+}
+
+.event2_discuusion_area h2{
+    text-align: end;
+    margin-bottom: 20px;
+    color: #0055B3;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.event2_discuusion_area h3{
+    color: #0055B3;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: justify;            
+    text-indent: 2px;    
+    text-transform: capitalize;
+}
+
+.event2_discuusion_area p{
+    font-size: 12px;
+    text-align: justify;
+    text-indent: 2px;
+    text-transform: capitalize;
+}
+.event_area_2{
+    display: flex;
+    margin-left: 158px;
+}

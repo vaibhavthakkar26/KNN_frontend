@@ -1,0 +1,19 @@
+.cart_no_item{
+    background: #0055B3;
+    margin-top: 209px;
+    width: 1068px;
+    height: 143px;
+    text-align: center;
+    line-height: 139px;
+    margin-left: 150px;
+    margin-right: 150px;    
+    margin-bottom: 140px;
+    color: #fff;
+    border-radius: 21px;
+}
+.cart_no_item h2{
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+
+}

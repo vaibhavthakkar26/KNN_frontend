@@ -1,0 +1,46 @@
+.event_section {
+  width: 1176px;
+  height: 467px;
+  border-radius: 9px;
+  background: #0055b3;
+  margin-top: 46px;
+  margin-left: 98px;
+  display: flex;
+}
+
+.event_discuss_part {
+  display: flex;
+}
+
+.Speacial_event {
+  width: 400px;
+  margin-top: 110px;
+  padding-left: 10px;
+  margin-left: 30px;
+  color: white;
+}
+
+.Speacial_event h2 {
+  font-weight: 700;
+  margin-left: 30px;
+  font-size: 36px;
+}
+
+.Speacial_event p {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.rt_btn {
+  width: 265px;
+  height: 53px;
+  color: 000000;
+  font-weight: 700;
+  align-items: center;
+  background: #ffc106;
+  border-radius: 15px;
+  font-size: 24px;
+  margin-top: 30px;
+  border: none;
+  margin-left: 43px;
+}

@@ -1,0 +1,151 @@
+.blog_main_image{
+    color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 329px; 
+    padding-bottom: 330px;
+    justify-content: center;
+    background-image: url('../../assets/image/Rectangle 54.png');
+}
+.blog_main_image p{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.blog_main_image h3{
+    font-weight: 900;
+    font-size: 65px;
+
+}
+.blog_inside_footer_blog{
+    width: 1184px;
+    height: 1083px;
+    border-radius: 9px;
+    background: #0055B3;
+    margin-left: 102px;
+    margin-top: 100px;
+}
+.blog_blog_inside_blog{
+    display: flex;
+    margin-left: 97px;
+}
+.blog_left_side_blog,.blog_right_side_blog{
+    margin-top: 51px;
+}
+.blog_owner_detailS{
+    line-height: 40px;
+
+}
+.social_media_blog{
+    display: flex;
+    justify-content: space-between;
+}
+.blog_owner_detailS h2{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+}
+.blog_owner_detailS p{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+.details_about_blog_inside{
+    color: #FFFFFF;
+    width: 579px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    height: 80px;
+}
+.blog_right_side_blog hr{
+    border: 1px dashed  white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.star_blog_inside,.authour_area_blog_inside{
+    display: flex;
+}
+.authour_area_blog_inside{
+    justify-content: space-between;
+}
+.authour_area_blog_inside h2{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    font-style: normal;
+}
+.blog_right_side_blog{
+    margin-left: 62px;
+}
+.star_svg_bi{
+    padding: 4px;
+}
+.text_Text_area{
+    width: 1004px;
+    height: 199px;
+    border-radius: 21px;
+}
+.text_area_blog_inside{
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-right: 90px;
+}
+.comment_section_blog_inside{
+    display: flex;
+    margin-left: 96px;
+    margin-top: 70px;   
+}
+.comment_one_area{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-top: 64px;
+}
+.blog_inside_comment_comment{
+    width: 579px;
+    height: 80px;
+    color: #FFFFFF;
+    margin-left: 36px;
+    margin-right: 35px;
+}
+.blog_inside_comment_comment P{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    
+}
+.comment_section_right_bi{
+    align-items: center;
+    width: 265px;
+    height: 383px;
+    text-align: center;
+    background: url('../../assets/image/Rectangle\ 61.png');
+}
+.comment_section_right_bi h3{
+    color: #0055B3;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;   
+}
+.comment_section_right_bi P{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 2px;
+}
+.comment_section_right_bi img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.comment_section_left_bi h1{
+    color: #FFFFFF;
+}

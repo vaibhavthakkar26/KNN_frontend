@@ -1,0 +1,77 @@
+/* body{
+    background-color: rgb(226 224 224);
+} */
+.signup_section{
+    width: 1026px;
+    display: flex;
+    height: 788px;
+}
+.signup_main{
+    max-width: 90%;
+    margin: 170px;
+    display: flex;
+}
+.signup_image{
+    width: 525px;
+    height: 861px;
+}
+.bubbles{
+    height: 861px;
+    width: 525px;
+}
+.signup_signup{
+    width: 437px;
+    background: #0055B3;
+    text-align: center;
+    border: #0055B3;
+    margin-top: 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    height: 46px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.signup_bottom{
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.signup_bottom p{
+    color: #0055B3;
+}
+.signup_bottom h6{
+    color: #828282;
+    font-size: 15px;
+}
+.Account_details{
+    width: 501px;
+    height: 861px;
+    background-color: white;
+    text-align: center;
+}
+.input_signup{
+    width: 437px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 7px;
+    height: 62px;
+    margin-top: 10px;
+    border: 3px solid #FFC106;
+    margin-bottom: 12px;
+}
+
+.create_head{
+    color:#0055B3;
+    width: 349px;
+    height: 65px;
+    padding-top: 13px;
+    margin-left: 31px;
+    margin-bottom: 20px;
+
+}
+.create_head h2{
+    font-weight: 800;
+    font-size: 36px;
+}

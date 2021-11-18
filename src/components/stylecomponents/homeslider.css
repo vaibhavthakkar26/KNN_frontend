@@ -1,0 +1,63 @@
+.Slider_image_area img{
+    width: 198px;
+    height: 298px;
+    border-radius: 7px;
+}
+
+.adventure_button{
+    width: 104px;
+    height: 30px;
+    margin-top: 16px;
+    background: #0055B3;
+    border-radius: 7px;
+    margin-left: 18px;
+    padding-left: 4px;
+    padding-top: 1px;
+    color: #ffff;
+}
+
+
+
+.details_book_price{
+    margin-left: 19px;
+    margin-top: 31px;
+}
+
+.book_description12{
+    margin-top: 22px;
+    
+}
+.style_home_slider{
+    margin-left: 92px;
+    margin-right: 40px;
+}
+.star_rate{
+    width:58px;
+    height:30px;
+    background: #FFC106;
+    border-radius:7px;
+    margin-top: 16px;
+    display: flex;
+    margin-left: 11px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_slider_description{
+    display: flex;
+}
+
+.slider_buyer_btn{
+    width: 63px;
+    height: 22px;
+    background: #FFC106;
+    border-radius: 7px;
+    border: none;
+}
+
+.home_slider_main{
+    display: flex !important;
+    margin-left: 0px;
+    margin-top: 31px;
+}

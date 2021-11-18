@@ -1,0 +1,126 @@
+.main_checkout_section {
+  width: 1131px;
+  height: 470px;
+  background: #0055b3;
+  margin-left: 110px;
+  margin-right: 127px;
+  margin-top: 108px;
+  border-radius: 21px;
+}
+
+.main_checkout_section h2 {
+  padding-top: 34px;
+  padding-left: 70px;
+  color: #fff;
+  padding-bottom: 34px;
+  font-weight: bold;
+  font-size: 40px;
+
+}
+
+.checkout_input {
+  background: transparent;
+  border: none;
+  margin-left: 72px;
+  margin-top: 32px;
+  color: white;
+  padding: 20px;
+  height: 62px;
+  width: 437px;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+
+.checkout_input1 {
+  background: transparent;
+  border: none;
+  margin-right: 67px;
+  margin-left: 136px;
+  margin-top: 32px;
+  padding: 20px;
+  height: 62px;
+  width: 437px;
+  border: 1px solid #fff;
+}
+.main_checkout_section input::placeholder {
+  color: #fff;
+}
+
+.checkout_input2 {
+  background: transparent;
+  border: none;
+  padding: 20px;
+  margin-right: 67px;
+  margin-left: 72px;
+  margin-top: 32px;
+  color: white;
+  height: 62px;
+  width: 992px;
+  border: 1px solid #fff;
+}
+
+.checkout_deposit_area {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  padding-left: 212px;
+  padding-right: 142px;
+  line-height: 66px;
+}
+
+.payment_information_deposit_checkout {
+  margin-bottom: 10px;
+}
+
+.payment_information_deposit_checkout h2{
+      font-weight: 500;
+      font-size: 30px;
+      font-style: normal;
+      color: black;
+}
+
+.cash_delivery_area {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cash_delivery_area h3{
+  font-size: 600;
+  font-size: 45px;
+
+}
+
+.continue_btn {
+  width: 311px;
+  height: 92px;
+  background: #0055b3;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  border-radius: 21px;
+  border: none;
+  margin-top: 69px;
+}
+.fl_section {
+  display: flex;
+}
+.sl_section {
+  display: flex;
+}
+.payment_with_deposit_checkout h2 {
+  background: #0055b3;
+  width: 943px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  height: 93px;
+  line-height: 93px;
+}
+.payment_with_deposit_checkout label{
+  font-size: 15px;
+  font-weight: 400;
+}

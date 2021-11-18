@@ -1,0 +1,137 @@
+.main_discuss_form_inside_{
+    display: flex;
+    max-width: 100%;
+    margin-top: 64px;
+}
+.left_D_F_I{
+    width: 85%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-left: 74px;
+    margin-right: 43px;
+}
+.right_D_F_I{
+    width: 30%;
+    margin-right: 60px;
+    height: auto;
+    border: 1px solid rgb(187, 14, 14);
+}
+.create_discuss_section_inside,.comment_section_discuss_inside,.edit_section_d_f_I{
+    display: flex;
+}
+.edit_section_d_f_I{
+    justify-content: space-between;
+}
+.create_discuss_section_inside{
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.create_discuss_section_inside h2{
+    margin-left: -10px;
+    color: #0055B3;
+}
+.create_discuss_section_inside input {
+    width: 407px;
+    height: 37px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid #909090;
+    padding-left: 13px;
+}
+.create_discuss_btn_btn{
+    Width :163px;
+    Height :35px;
+    font-weight: 700;
+    font-size: 15px;
+    border: #00BD57;
+    color: #fff;
+    background: #00BD57;
+}
+.one_one_heading{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+.one_one_heading h2{
+    font-weight: 700;
+    font-size: 24px;
+    color: #434343;
+}
+.comment_timing_discussion{
+    display: flex;
+    padding-left: 30px;
+}
+.comment_timing_discussion h2{
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+}
+.comment_timing_discussion h3{
+    color: #0055B3;
+    margin-left: 40px ;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: justify;
+}
+.edit_main_discussion h2{
+    color: #0055B3;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.user_comment_section_{
+    display: flex;
+    margin-top: 40px;
+}
+.comment_user_texT_areA{
+    width: 689px;
+    height: 131px;
+    border: none;
+    color:  #828282;
+    background: #F2F2F2;
+}
+._d_f_i_comment h2{
+    margin-left: 31px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+.user_comment_section_di{
+    margin-left: 23px;
+}
+
+.post_comment{
+    width: 158px;
+    height: 38px;
+    margin-top: 22px;
+    background: #FFC106;
+    border: #FFC106;
+    color:  #000000;
+    font-weight: 500;
+    font-size: 14px;
+       
+}
+.tri_angle_discuss_inside{
+    position: relative;
+    left: 685px;
+    top: 30px;
+}
+.users_comment_sec_d_f_i,.user_name_dfi_area{
+    display: flex;
+}
+.user_name_dfi_area p{
+    margin-top: 20px;
+    margin-left: 21px;
+}
+.comment_name_area{
+    margin-left: 13px;
+}
+.edit_delete_section_d_inside{
+    display: flex;
+}
+.edit_delete_section_d_inside p{
+    padding-right: 30px;
+}
+.comment_section_discuss_inside{
+    margin-top: 20px;
+}

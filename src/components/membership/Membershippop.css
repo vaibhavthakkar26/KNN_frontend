@@ -1,0 +1,17 @@
+.member_pop_up_section{
+    background:  #0055B3;
+    text-align: center;
+ }
+ .select_member_popup{
+     background: #FFD966;
+     width: 691px;
+     height: 114px;
+     border-radius: 12px;
+ }
+ .option_member_popup{
+    background: #FFFFFF;
+     color: #003066;
+     width: 573px;
+     height: 54px;
+     border-radius: 9px;
+ }

@@ -1,0 +1,104 @@
+
+.mp_start{
+    margin-left: 84px;
+    margin-right: 65px;
+}
+.my_profile_mp{
+    color: #0055B3;
+    width: 1208px;
+}
+.profile_area_mp{
+    background: #F0F5FA;
+    width: 1208px;
+    height: 760px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+
+    margin-top: 70px;
+
+}
+.profile_area_mp img{
+    width: 244px;
+    height: 244px;
+    border-radius: 50%;
+    margin-top: 98px;
+}
+.editprofile_btn{
+    width: 223px;
+    height: 56px;
+    border-radius: 7px;
+    background: #0055B3;
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #fff;
+    border: #0055B3;
+}
+
+.boxes_activities_one,.boxes_activities_two,.boxes_activities_three,.boxes_activities_four,.boxes_activities_five,.boxes_activities_six{
+    width: 356px;
+    height: 320px;
+    margin-right: 74px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+
+}
+.box_one_my_profile,.box_two_my_profile{
+    display: flex;
+    margin-top: 60px;
+}
+.boxes_activities_one{
+    background: #02A64D;
+
+}
+.box_one_my_profile h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.boxes_activities_two{
+    background: #0055B3;
+
+}
+.boxes_activities_three{
+    background: #E8A700;
+
+}
+.boxes_activities_four{
+    background: #003066;
+}
+.boxes_activities_five{
+    background: #0055B3;
+
+}
+.boxes_activities_six{
+    background: #FF3939;
+
+}
+.circle_mp{
+    position: absolute;
+    top: 346px;
+    left: 167px;
+}
+.triangle_seco{
+    position: absolute;
+    top: 510px;
+    left: 901px;
+}
+.triangle_mp_third{
+    position: absolute;
+    top: 1166px;
+    left: 758px;
+}
+
+.activites_myprofile {
+    margin-top: 135px;
+    color: #0055B3;
+    font-weight: 600;
+    font-size: 40px;
+}
