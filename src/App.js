@@ -41,6 +41,14 @@ import AdminCreateBook from "./components/admin/AdminBook/AdminCreateBook";
 import AdminCreateBlogWriter from "./components/admin/AdminBlog/AdminCreateBlogWriter";
 import AdminSubscription from "./components/admin/AdminSubscription/AdminSubscription";
 import CkEditorexample from "./components/admin/CkEditorexample";
+import AdminCreateCategory from "./components/admin/Admin_categorey/AdminCreateCategory";
+import AdminDiscussionDetails from "./components/admin/Admin_discuss/AdminDiscussionDetails";
+import AdminBookDetails from "./components/admin/AdminBook/AdminBookDetails";
+import Admin_createDiscuss from "./components/admin/Admin_discuss/Admin_createDiscuss";
+import AdminUsersList from "./components/admin/AdminUsers/AdminUsersList";
+import AdminUserDetail from "./components/admin/AdminUsers/AdminUserDetail";
+import OrderList from "./components/admin/AdminOrder/OrderList";
+import OrderDetails from "./components/admin/AdminOrder/OrderDetails";
 function App(props) {
   return (
     <Router>
@@ -59,7 +67,7 @@ function App(props) {
           <Route path="/discussinside" exact component={Discussinside} />
           <Route path="/discuss" exact component={Discuss} />
           <Route path="/bloginside" exact component={BlogInside} />
-          <Route path="/Creatediscuss" exact component={Creatediscuss} />
+          <Route path="/creatediscuss" exact component={Creatediscuss} />
           <Route path="/membership" exact component={Membership} />
           <Route path="/membershippop" exact component={Membershippop} />
           <Route
@@ -74,7 +82,7 @@ function App(props) {
           <Route path="/cart" exact component={Cart} />
           <Route path="/cartwithnoitem" exact component={cartwithnoitem} />
           <Route path="/login" exact component={Login} />
-          <Route path="/Register" exact component={Register} />
+          <Route path="/register" exact component={Register} />
           {/* admmin side */}
           {/* <Route path="/Admin" exact component={Adminsidebar}/>  */}
           <Route path="/admindashboard" exact component={AdminDashboard} />
@@ -87,14 +95,45 @@ function App(props) {
           />
           <Route path="/adminbloglist" exact component={AdminBlogList} />
           <Route path="/adminbooklist" exact component={AdminBookList} />
+          <Route path="/adminBookDetails" exact component={AdminBookDetails} />
           <Route path="/admincreatebook" exact component={AdminCreateBook} />
           <Route path="/admindiscussion" exact component={AdminDiscussion} />
+          <Route
+            path="/adminCreateDiscussion"
+            exact
+            component={Admin_createDiscuss}
+          />
+          <Route
+            path="/adminDiscussionDetails"
+            exact
+            component={AdminDiscussionDetails}
+          />
           <Route path="/admincategorey" exact component={AdminCategorey} />
+          <Route
+            path="/adminCreateCategorey"
+            exact
+            component={AdminCreateCategory}
+          />
           <Route path="/adminblogwrite" exact component={AdminBlogwriter} />
           <Route path="/adminCreateblog" exact component={AdminCreateBlog} />
-          <Route path="/createblogwriter" exact component={AdminCreateBlogWriter}/>
-          <Route path="/adminsubscription" exact component={AdminSubscription}/>
-          <Route path="/ckeditor" exact component={CkEditorexample}/>
+          <Route
+            path="/createblogwriter"
+            exact
+            component={AdminCreateBlogWriter}
+          />
+          <Route
+            path="/adminsubscription"
+            exact
+            component={AdminSubscription}
+          />
+          <Route path="/ckeditor" exact component={CkEditorexample} />
+
+          <Route path="/adminUsersList" exact component={AdminUsersList} />
+          <Route path="/adminUserDetail" exact component={AdminUserDetail} />
+
+          <Route path="/adminOrderList" exact component={OrderList} />
+
+          <Route path="/adminOrderDetails" exact component={OrderDetails} />
           {/* <Route path="/" */}
         </switch>
       </div>

@@ -25,6 +25,30 @@ const DiscussionService = {
     }
   },
 
+  updateDiscussion: async (
+    id,
+    titleImage,
+    question,
+    createdBy,
+    categoryId,
+    description
+  ) => {
+    try {
+      const formData = new FormData();
+      formData.append("titleImage", titleImage);
+      formData.append("question", question);
+      formData.append("createdBy", createdBy);
+      formData.append("categoryId", categoryId);
+      formData.append("description", description);
+      const res = await axios.put(`${api_url}/discussions/${id}`, formData);
+      console.log("updateDiscussion Response: ", res);
+      return res;
+    } catch (error) {
+      console.log("updateDiscussion Error", error.response);
+      return error.response;
+    }
+  },
+
   getAllDiscussion: async (categoryId) => {
     try {
       const res = await axios.get(

@@ -63,50 +63,50 @@ function checkout(props) {
   return (
     <div>
       <Header />
-      <div class="main_checkout_section">
+      <div className="main_checkout_section">
         <h2>Buyer Info</h2>
-        <div class="fl_section">
+        <div className="fl_section">
           <input
             type="text"
-            class="checkout_input"
+            className="checkout_input"
             placeholder="First Name"
             onChange={(e) => setFirstName(e.target.value)}
           />
           <input
             type="text"
-            class="checkout_input1"
+            className="checkout_input1"
             placeholder="Last Name"
             onChange={(e) => setLastName(e.target.value)}
           />
         </div>
-        <div class="sl_section">
+        <div className="sl_section">
           <input
             type="text"
-            class="checkout_input"
+            className="checkout_input"
             placeholder="Email"
             onChange={(e) => setEmailId(e.target.value)}
           />
           <input
             type="text"
-            class="checkout_input1"
+            className="checkout_input1"
             placeholder="Contact No"
             onChange={(e) => setContactNo(e.target.value)}
           />
         </div>
-        <div class="sl_section">
+        <div className="sl_section">
           <input
             type="text"
-            class="checkout_input2"
+            className="checkout_input2"
             placeholder="Address"
             onChange={(e) => setAddress(e.target.value)}
           />
         </div>
       </div>
-      <div class="checkout_deposit_area">
-        <div class="payment_information_deposit_checkout">
+      <div className="checkout_deposit_area">
+        <div className="payment_information_deposit_checkout">
           <h2> For payment, send Nrs. {total} to esewa or Khalti </h2>
         </div>
-        <div class="payment_with_deposit_checkout">
+        <div className="payment_with_deposit_checkout">
           <h2> esewa/Khalti ID: 9861446103 </h2>
           <input type="checkbox" value="" name="" />
           <label>
@@ -117,11 +117,11 @@ function checkout(props) {
         </div>
       </div>
 
-      <div class="cash_delivery_area">
+      <div className="cash_delivery_area">
         <h3>
           OR,<span style={{ color: "red" }}>Cash on Delivery</span>
         </h3>
-        <button class="continue_btn" onClick={() => onDone()}>
+        <button className="continue_btn" onClick={() => onDone()}>
           CONTINUE
         </button>
       </div>

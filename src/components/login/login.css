@@ -82,3 +82,9 @@ body{
     font-style: normal;
     
 }
+
+.login_eye{
+    position: absolute;
+    left: 376px;
+    top: 56px;
+}

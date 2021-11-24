@@ -85,7 +85,7 @@ function EditProfile(props) {
           width="111"
           height="111"
           viewBox="0 0 111 111"
-          class="circle_ep"
+          className="circle_ep"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -102,7 +102,7 @@ function EditProfile(props) {
           height="84"
           viewBox="0 0 75 84"
           fill="none"
-          class="triangle_ep"
+          className="triangle_ep"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -117,7 +117,7 @@ function EditProfile(props) {
           height="88"
           viewBox="0 0 97 88"
           fill="none"
-          class="triangle_right_ep"
+          className="triangle_right_ep"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -127,53 +127,53 @@ function EditProfile(props) {
           />
         </svg>
 
-        <div class="edit_profile_main">
-          <div class="edit_profile_one">
+        <div className="edit_profile_main">
+          <div className="edit_profile_one">
             <h3 style={{ color: "#0055B3" }}>Edit profile</h3>
             <hr style={{ border: "1px solid rgba(255, 193, 6, 1)" }} />
           </div>
-          <div class="edit_part_user">
-            <div class="profile_picture_edit_profile">
+          <div className="edit_part_user">
+            <div className="profile_picture_edit_profile">
               <img src={userImage} alt="" />
             </div>
             <input type="file" onChange={ImageUpload} />
-            <div class="edit_pencil_area">
+            <div className="edit_pencil_area">
               <img
                 src={Ellipse87}
-                class="pen_edit"
+                className="pen_edit"
                 width="84px"
                 height="84px"
                 alt=""
               />
               <img
                 src={pencil}
-                class="pencil_edit"
+                className="pencil_edit"
                 width="38px"
                 height="38px"
                 alt=""
               />
             </div>
-            <div class="user_input_area_ep">
-              <input type="text" placeholder="full name" class="edit_input" value={firstName}
+            <div className="user_input_area_ep">
+              <input type="text" placeholder="full name" className="edit_input" value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}/>
               <br />
-              {/* <input type="email" placeholder="Email" class="edit_input" /> */}
+              {/* <input type="email" placeholder="Email" className="edit_input" /> */}
               <br />
               <input
                 type="number"
                 placeholder="contact No"
-                class="edit_input"
+                className="edit_input"
                 value={mobileNo}
                 onChange={(e) => setMobileNo(e.target.value)}
               />
               <br />
-              <input type="text" placeholder="Address" class="edit_input"   value={address}
+              <input type="text" placeholder="Address" className="edit_input"   value={address}
                 onChange={(e) => setAddress(e.target.value)} />
               <br />
               {/* <input
                 type="password"
                 placeholder="Password"
-                class="edit_input"
+                className="edit_input"
               /> */}
             </div>
             <div>
@@ -182,7 +182,7 @@ function EditProfile(props) {
                   <Loaderring />
                 </div>
               ) : (
-                <button class="save_edit_profile" onClick={() => updateUser()}>
+                <button className="save_edit_profile" onClick={() => updateUser()}>
                   {" "}
                   save
                 </button>

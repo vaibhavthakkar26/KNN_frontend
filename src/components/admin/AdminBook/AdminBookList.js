@@ -35,7 +35,7 @@ function AdminBookList(props) {
 
   const onBookClick = async (bookId) => {
     console.log("bookId: ", bookId);
-    // props.history.push(`/admineventdetails?id=${bookId}`);
+    props.history.push(`/adminBookDetails?id=${bookId}`);
   };
 
   const onStatusChange = async (id, changeTo) => {
@@ -46,11 +46,18 @@ function AdminBookList(props) {
 
     if (statusChange.status === 200) {
       SuccessToast(statusChange.data.message);
-      await getAllBooks();
+      // await getAllBooks();
+      window.location.reload();
     } else {
       ErrorToast(statusChange.data.message);
-      await getAllBooks();
+      // await getAllBooks();
+      window.location.reload();
     }
+  };
+
+  const onBookEdit = async (bookId) => {
+    console.log("bookId: ", bookId);
+    props.history.push(`/admincreatebook?id=${bookId}`);
   };
 
   return (
@@ -115,7 +122,7 @@ function AdminBookList(props) {
                       <td>{res.authorName}</td>
                       <td>{res.createdBy}</td>
                       <td>
-                        <button>Edit</button>
+                        <button onClick={() => onBookEdit(res.id)}>Edit</button>
                       </td>
                     </tr>
                   );

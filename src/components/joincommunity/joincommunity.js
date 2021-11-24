@@ -61,15 +61,15 @@ function joincommunity(props) {
   return (
     <div>
        <Header />
-      <div class="main_join_community">
-        <div class="community_knowledge">
-          <div class="one_main_join_community">
+      <div className="main_join_community">
+        <div className="community_knowledge">
+          <div className="one_main_join_community">
             <h2> JOIN THE COMMUNITY OF KNOWEDGE </h2>
           </div>
-          <div class="second_main_join_community">
+          <div className="second_main_join_community">
             <h2> BECOME A MEMBER </h2>
           </div>
-          <div class="third_main_join_community">
+          <div className="third_main_join_community">
             {isLoading ? (
               <div style={{ marginLeft: "123px" }}>
                 <Loaderring />

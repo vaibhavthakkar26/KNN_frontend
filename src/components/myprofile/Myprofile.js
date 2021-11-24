@@ -37,9 +37,9 @@ function Myprofile(props) {
       ) : (
         <div>
           {user ? (
-            <div class="main_my_profile">
-              <div class="mp_start">
-                <div class="my_profile_mp">
+            <div className="main_my_profile">
+              <div className="mp_start">
+                <div className="my_profile_mp">
                   <h1> My profile </h1>
                   <hr style={{ border: " 1px solid rgba(255, 193, 6, 1);" }} />
                 </div>
@@ -48,7 +48,7 @@ function Myprofile(props) {
                   height="111"
                   viewBox="0 0 111 111"
                   fill="none"
-                  class="circle_mp"
+                  className="circle_mp"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
@@ -64,7 +64,7 @@ function Myprofile(props) {
                   height="127"
                   viewBox="0 0 124 127"
                   fill="none"
-                  class="triangle_seco"
+                  className="triangle_seco"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -78,7 +78,7 @@ function Myprofile(props) {
                   height="81"
                   viewBox="0 0 73 81"
                   fill="none"
-                  class="triangle_mp_third"
+                  className="triangle_mp_third"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -87,30 +87,30 @@ function Myprofile(props) {
                     fill-opacity="0.28"
                   />
                 </svg>
-                <div class="profile_area_mp">
+                <div className="profile_area_mp">
                   <img src={user.profilePicture} alt="" />
                   <h3> Name: {user.firstName}</h3>
                   <h3> Email: {user.emailId}</h3>
                   <h3> contact Details:{user.mobileNumber}</h3>
                   <h3> Address: {user.address}</h3>
                   <Link to="/editprofile">
-                  <button class="editprofile_btn">EDIT PROFILE</button>
+                  <button className="editprofile_btn">EDIT PROFILE</button>
                   </Link>
                 </div>
-                <h3 class="activites_myprofile"> Activites </h3>
+                <h3 className="activites_myprofile"> Activites </h3>
 
-                <div class="activity_books_mp">
-                  <div class="box_one_my_profile">
-                    <div class="boxes_activities_one">
+                <div className="activity_books_mp">
+                  <div className="box_one_my_profile">
+                    <div className="boxes_activities_one">
                       <h2> No. of BooksExchanged </h2>
                       <h2> {user.bookExchanged}</h2>
                     </div>
 
-                    <div class="boxes_activities_two ">
+                    <div className="boxes_activities_two ">
                       <h2> No. of Participated Events </h2>
                       <h2> {user.eventParticipated}</h2>
                     </div>
-                    <div class="boxes_activities_three">
+                    <div className="boxes_activities_three">
                       <h2> No. of Discussions </h2>
                       <h2> {user.discussions}</h2>
                     </div>

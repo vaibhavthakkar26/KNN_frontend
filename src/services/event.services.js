@@ -214,6 +214,20 @@ const EventService = {
       return error.response;
     }
   },
+
+  eventRegistrationConfirm: async (id, status) => {
+    try {
+      const res = await axios.post(`${api_url}/events/verify/payment`, {
+        eventRegistrationId: id,
+        isPaymentDone: status,
+      });
+      console.log("eventRegistrationConfirm Response: ", res);
+      return res;
+    } catch (error) {
+      console.log("eventRegistrationConfirm Error", error.response);
+      return error.response;
+    }
+  },
 };
 
 export default EventService;

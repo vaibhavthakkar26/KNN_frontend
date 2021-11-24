@@ -99,22 +99,22 @@ function Home(props) {
   return (
     <div>
       <Header />
-      <div class="home_firstsection">
-        <div class="home_section_child1">
-          <div class="home_sec_one">
+      <div className="home_firstsection">
+        <div className="home_section_child1">
+          <div className="home_sec_one">
             <h4> MOST POPULAR NEPALI NOVELS </h4> <br />
             <h3> SALES UP TO 30% OFF </h3>
-            <button class="shop_BTN_BTN"> SHOP NOW </button>
+            <button className="shop_BTN_BTN"> SHOP NOW </button>
           </div>
           <div>
-            <div class="Novels_part">
-              <div class="First_novel">
+            <div className="Novels_part">
+              <div className="First_novel">
                 <img src={book3} alt="" />
               </div>
-              <div class="second_part">
+              <div className="second_part">
                 <img src={book2} alt="" />
               </div>
-              <div class="third_part">
+              <div className="third_part">
                 <img src={book1} alt="" />
               </div>
 
@@ -122,16 +122,16 @@ function Home(props) {
             </div>
           </div>
         </div>
-        <div class="home_section_child2">
-          <div class="search">
+        <div className="home_section_child2">
+          <div className="search">
             <input type="search" placeholder="what do you want to search" />
-            <div class="search_icon">
+            <div className="search_icon">
               <img src={searchIcon} alt="" width="22px" height="22px" />
             </div>
           </div>
         </div>
       </div>
-      <div class="Trending_heading">
+      <div className="Trending_heading">
         {" "}
         <h4> Trending This Week </h4>
         <svg
@@ -156,23 +156,23 @@ function Home(props) {
           />
         </svg>
       </div>
-      <div class="trending_week">
+      <div className="trending_week">
         {isLoading ? (
           <div style={{ marginLeft: "123px" }}>
             <Loaderring />
           </div>
         ) : (
           treadingThisWeek.map((book) => (
-            <div class="book_one">
+            <div className="book_one">
               <img
                 src={book.titleImage}
                 alt="book"
                 onClick={() => onSelectBook(book.id)}
               />
-              <div class="details_bookone">
+              <div className="details_bookone">
                 <h2> {book.categoryName}</h2>
                 <p onClick={() => onSelectBook(book.id)}> {book.bookName} </p>
-                <button class="tranding_bookbtn"> RS.{book.price}</button>
+                <button className="tranding_bookbtn"> RS.{book.price}</button>
               </div>
             </div>
           ))
@@ -182,11 +182,11 @@ function Home(props) {
       {/* <!-- carousel part  -->
 
     <!-- section three  --> */}
-      <div class="home_sectionthree">
-        <div class="section_three">
-          <div class="quick_delivery">
+      <div className="home_sectionthree">
+        <div className="section_three">
+          <div className="quick_delivery">
             <img src={fastdeivery} alt="" width="93px" height="93px" />
-            <div class="delivery_discussion">
+            <div className="delivery_discussion">
               <h2> quick Delivery </h2>
               <p>
                 {" "}
@@ -195,7 +195,7 @@ function Home(props) {
               </p>
             </div>
           </div>
-          <div class="eco_friendly">
+          <div className="eco_friendly">
             <img
               src={organicproduct}
               alt=""
@@ -203,12 +203,12 @@ function Home(props) {
               height="85px"
               style={{ marginTop: "57px" }}
             />
-            <div class="eco_friendly_discussion">
+            <div className="eco_friendly_discussion">
               <h2> ECO Friendly </h2>
               <p> Reuse Recycle </p>
             </div>
           </div>
-          <div class="community">
+          <div className="community">
             <img
               src={intellectual}
               alt=""
@@ -219,7 +219,7 @@ function Home(props) {
             <h2> Intellectual Community </h2>
             <p> connect with the community</p>
           </div>
-          <div class="section_three_contact">
+          <div className="section_three_contact">
             <img
               src={callsvg}
               alt=""
@@ -237,13 +237,13 @@ function Home(props) {
           </div>
         </div>
       </div>
-      <div class="home_slider">
+      <div className="home_slider">
         <h2> Most Loved </h2>
         <Homeslider />
       </div>
 
       <div>
-        <div class="categories_list_main">
+        <div className="categories_list_main">
           <h2> Categories</h2>
 
           <Slider {...settings}>
@@ -257,7 +257,7 @@ function Home(props) {
                 //   {catname.categoryName}
                 // </h3>
                 <div
-                  class="book_list_box"
+                  className="book_list_box"
                   onClick={() => selectCategory(catname.id)}
                 >
                   <p> {catname.categoryName} </p>
@@ -269,18 +269,18 @@ function Home(props) {
       </div>
 
       <Specialevent />
-      {/* <div class="event_section">
-        <div class="event_discuss_part">
-            <div class="Speacial_event">
+      {/* <div className="event_section">
+        <div className="event_discuss_part">
+            <div className="Speacial_event">
                 <h1> SPECIAL EVENTS</h1>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
-                <button class="rt_btn"> REGISTER TODAY</button>
+                <button className="rt_btn"> REGISTER TODAY</button>
             </div>
             
-            <img src={GD1}  class="online_dm" alt=""/>
-            <img src={Dm1} class="online_dm" alt=""/>
+            <img src={GD1}  className="online_dm" alt=""/>
+            <img src={Dm1} className="online_dm" alt=""/>
             
             <div>
 
@@ -290,7 +290,7 @@ function Home(props) {
 
       {/* <!-- blog event  --> */}
 
-      <div class="section_blog">
+      <div className="section_blog">
         <h2> Latest Blogs </h2>
         <div style={{ display: "flex", marginTop: "51px" }}>
           {isLoading ? (
@@ -299,8 +299,8 @@ function Home(props) {
             </div>
           ) : (
             blogs.map((blog) => (
-              <div class="latest_blog_one">
-                <div class="image_blog_section">
+              <div className="latest_blog_one">
+                <div className="image_blog_section">
                   <img
                     src={blog.titleImage}
                     alt=""
@@ -308,10 +308,10 @@ function Home(props) {
                   />
                 </div>
                 <div>
-                  <div class="discuss_blog">
+                  <div className="discuss_blog">
                     <p> {blog.subTitle}</p>
                   </div>
-                  <div class="blog_lastsection_">
+                  <div className="blog_lastsection_">
                     <img
                       src={blog.BlogWriter.profilePicture}
                       alt=""
@@ -319,7 +319,7 @@ function Home(props) {
                       height="49px"
                       style={{ borderRadius: "50%" }}
                     />
-                    <div class="details_date">
+                    <div className="details_date">
                       <h2>{blog.BlogWriter.name}</h2>
                     </div>
                   </div>
@@ -347,8 +347,8 @@ function Home(props) {
         />
       </svg>
 
-      <div class="adv_main">
-        <div class="adv_header">
+      <div className="adv_main">
+        <div className="adv_header">
           <h2> ADVERTISEMENTS</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -359,10 +359,10 @@ function Home(props) {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <button class="adv_btn">ADVERTISE HERE ! </button>
+          <button className="adv_btn">ADVERTISE HERE ! </button>
         </div>
-        <img class="adv_img_1" src={GD2} height="336px" width="336px" alt="" />
-        <img class="adv_img_2" src={dm2} height="336px" width="336px" alt="" />
+        <img className="adv_img_1" src={GD2} height="336px" width="336px" alt="" />
+        <img className="adv_img_2" src={dm2} height="336px" width="336px" alt="" />
       </div>
       <Footer />
     </div>

@@ -115,9 +115,9 @@ function Memberwithbook(props) {
   return (
     <div>
       <Header />
-      <div class="container_with_book">
-        <div class="video_box_book"></div>
-        <div class="with_book_sec_heading">
+      <div className="container_with_book">
+        <div className="video_box_book"></div>
+        <div className="with_book_sec_heading">
           <h2> with Books 123 </h2>
           <p>
             {" "}
@@ -126,9 +126,9 @@ function Memberwithbook(props) {
           </p>
         </div>
 
-        <div class="Main_upload_section">
-          <div class="first_upload_one">
-            <div class="book_title_section">
+        <div className="Main_upload_section">
+          <div className="first_upload_one">
+            <div className="book_title_section">
               <input
                 type="text"
                 placeholder="Book Name *"
@@ -142,7 +142,7 @@ function Memberwithbook(props) {
                 required
               />
             </div>
-            <div class="upload_book_area">
+            <div className="upload_book_area">
               <input
                 type="file"
                 onChange={(e) => setTitleImage(e.target.files)}
@@ -150,8 +150,8 @@ function Memberwithbook(props) {
               />
             </div>
           </div>
-          <div class="first_upload_two">
-            <div class="book_title_section">
+          <div className="first_upload_two">
+            <div className="book_title_section">
               <input
                 type="text"
                 placeholder="Book Name *"
@@ -165,7 +165,7 @@ function Memberwithbook(props) {
                 required
               />
             </div>
-            <div class="upload_book_area">
+            <div className="upload_book_area">
               <input
                 type="file"
                 onChange={(e) => setTitleImage1(e.target.files)}
@@ -173,8 +173,8 @@ function Memberwithbook(props) {
               />
             </div>
           </div>
-          <div class="first_upload_three">
-            <div class="book_title_section">
+          <div className="first_upload_three">
+            <div className="book_title_section">
               <input
                 type="text"
                 placeholder="Book Name *"
@@ -188,7 +188,7 @@ function Memberwithbook(props) {
                 required
               />
             </div>
-            <div class="upload_book_area">
+            <div className="upload_book_area">
               <input
                 type="file"
                 onChange={(e) => setTitleImage2(e.target.files)}
@@ -263,36 +263,36 @@ function Memberwithbook(props) {
             <Loaderring />
           </div>
         ) : (
-          <button class="Login_button" onClick={onComplete}>
+          <button className="Login_button" onClick={onComplete}>
             {" "}
             Sign in{" "}
           </button>
         )}
-        <div class="payment_section_with_books">
+        <div className="payment_section_with_books">
           <h2>
             {" "}
-            For payment, send <span class="area_200"> Nrs.200</span> to esewa or
+            For payment, send <span className="area_200"> Nrs.200</span> to esewa or
             Khalti
           </h2>
         </div>
-        <div class="transfer_id_paid_event">
+        <div className="transfer_id_paid_event">
           <h2>
             {" "}
             esewa/Khalti ID:<b> 9861446103</b>
           </h2>
         </div>
-        <div class="agree_">
+        <div className="agree_">
           <input type="checkbox" />
           <label>
             I agree to the Privacy Policy and Terms & Conditions of the
             organization.
           </label>
-          <div class="last_section_memberwith">
-            <button class="complete_btn_member"> complete</button>
+          <div className="last_section_memberwith">
+            <button className="complete_btn_member"> complete</button>
             <h2>
               {" "}
               Does not have books ?{" "}
-              <span class="keep_deposit_member"> Keep Deposit </span>{" "}
+              <span className="keep_deposit_member"> Keep Deposit </span>{" "}
             </h2>
           </div>
         </div>

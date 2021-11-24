@@ -9,7 +9,7 @@ function Cartwithnoitem (){
         <div>
             <Header />
             <div style={{textAlign:"center"}}>
-                <div  class="cart_no_item">
+                <div  className="cart_no_item">
                 <h2> You don't have any items in your cart yet, <span style={{color:"#FFC106"}}> continue Exchanging.  </span></h2>
                 </div>
                     

@@ -160,6 +160,19 @@ function Admineventdetails(props) {
     }
   };
 
+  const onEventConfirm = async (status) => {
+    const eventRegistration = await EventService.eventRegistrationConfirm(
+      id,
+      status
+    );
+    if (eventRegistration.status === 200) {
+      SuccessToast(eventRegistration.data.message);
+      await getEvent();
+    } else {
+      ErrorToast(eventRegistration.data.message);
+    }
+  };
+
   // for modal start===>>
   const StyledModal = styled(ModalUnstyled)`
     position: fixed;
@@ -278,7 +291,8 @@ function Admineventdetails(props) {
                               onClick={() =>
                                 onDeleteBLSR(eventBebefits.id, "Benefits")
                               }
-                            alt="" />
+                              alt=""
+                            />
                           </div>
                         ))
                       ) : (
@@ -341,7 +355,8 @@ function Admineventdetails(props) {
                             onClick={() =>
                               onDeleteBLSR(eventRequirement.id, "Requirement")
                             }
-                          alt=""/>
+                            alt=""
+                          />
                         </div>
                       ))
                     ) : (
@@ -372,7 +387,8 @@ function Admineventdetails(props) {
                             onClick={() =>
                               onDeleteBLSR(eventSpeaker.id, "Speaker")
                             }
-                          alt=""/>
+                            alt=""
+                          />
                         </div>
                       ))
                     ) : (
@@ -407,6 +423,7 @@ function Admineventdetails(props) {
                       <th>Address</th>
                       <th>Payment Done ?</th>
                       <th>Event Fees</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -420,6 +437,17 @@ function Admineventdetails(props) {
                             <td>{reg.User.address}</td>
                             <td>{reg.isPaymentDone.toString()}</td>
                             <td>{event.fee}</td>
+                            <td>
+                              {reg.isPaymentDone ? (
+                                <button onClick={() => onEventConfirm(false)}>
+                                  Cancle
+                                </button>
+                              ) : (
+                                <button onClick={() => onEventConfirm(true)}>
+                                  Confirm
+                                </button>
+                              )}
+                            </td>
                           </tr>
                         );
                       })

@@ -75,3 +75,14 @@
     font-weight: 800;
     font-size: 36px;
 }
+
+.register_eye{
+    position: absolute;
+    left: 428px;
+    top:31px;
+}
+.confrim_password_eye{
+    position: absolute;
+    left: 428px;
+    top: 115px;
+}

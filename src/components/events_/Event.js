@@ -29,7 +29,7 @@ function Event(props) {
   return (
     <div>
       <Header />
-      <div class="event_1_svg_round">
+      <div className="event_1_svg_round">
         <svg
           width="399"
           height="629"
@@ -47,18 +47,18 @@ function Event(props) {
         </svg>
       </div>
 
-      <div class="event_first_section">
-        <h3 class="all_events_area"> All Events </h3>
-        <h3 class="new_events_area"> new Events </h3>
+      <div className="event_first_section">
+        <h3 className="all_events_area"> All Events </h3>
+        <h3 className="new_events_area"> new Events </h3>
 
-        <div class="event_search">
+        <div className="event_search">
           <input type="search" placeholder="Type to search" />
-          <div class="event_svg_round">
+          <div className="event_svg_round">
             <img src={searchIcon} alt="" width="22px" height="22px" />
           </div>
         </div>
 
-        <button class="your_event_btn">your event</button>
+        <button className="your_event_btn">your event</button>
       </div>
 
       {isLoading ? (
@@ -69,21 +69,21 @@ function Event(props) {
         events.map((event, i) => {
           if (i % 2 === 0) {
             return (
-              <div class="event_main_section">
-                <div class="events_area">
+              <div className="event_main_section">
+                <div className="events_area">
                   <img
                     src={event.titleImage}
                     alt=""
-                    class="images_event_page"
+                    className="images_event_page"
                     onClick={() => onEventClick(event.id)}
                   />
 
-                  <div class="event_discussion_area">
+                  <div className="event_discussion_area">
                     <h2> {event.title}</h2>
                     <h3> {event.subTitle}</h3>
                     <p> {event.body} </p>
 
-                    <button class="event_mainreigster_btn">
+                    <button className="event_mainreigster_btn">
                       Register Here !
                     </button>
                   </div>
@@ -92,28 +92,28 @@ function Event(props) {
             );
           } else {
             return (
-              <div class="event_area_2">
-                <div class="event2_part_one">
-                  <div class="event2_discuusion_area">
+              <div className="event_area_2">
+                <div className="event2_part_one">
+                  <div className="event2_discuusion_area">
                     <h2> {event.title} </h2>
                     <h3> {event.subTitle}</h3>
                     <p> {event.body}</p>
-                    <button class="event_button_2_register event_mainreigster_btn">
+                    <button className="event_button_2_register event_mainreigster_btn">
                       {" "}
                       Register here !{" "}
                     </button>
                   </div>
                 </div>
-                <div class="event2_part_two">
+                <div className="event2_part_two">
                   <img
                     src={event.titleImage}
                     alt=""
-                    class="images_event_page"
+                    className="images_event_page"
                     onClick={() => onEventClick(event.id)}
                   />
                 </div>
 
-                <div class="svg_play">
+                <div className="svg_play">
                   <svg
                     width="85"
                     height="95"

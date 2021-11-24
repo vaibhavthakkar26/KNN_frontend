@@ -27,23 +27,23 @@ function Blog(props) {
   return (
     <div>
       <Header />
-      <div class="main_blog_area">
+      <div className="main_blog_area">
         {isLoading ? (
           <div style={{ marginLeft: "123px" }}>
             <Loaderring />
           </div>
         ) : (
           blogs.map((blog) => (
-            // <div class="main_blog_area">
-            <div class="blog_section">
-              <div class="blog_main_image1">
+            // <div className="main_blog_area">
+            <div className="blog_section">
+              <div className="blog_main_image1">
                 <img
                   src={blog.titleImage}
-                  class="blog__child_image_area"
+                  className="blog__child_image_area"
                   alt=""
                   onClick={() => onBlogClick(blog.id)}
                 />
-                <div class="blog_in_blog">
+                <div className="blog_in_blog">
                   <h2> {blog.title}</h2>
                   <p> {blog.subTitle}</p>
                 </div>

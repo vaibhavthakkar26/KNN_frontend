@@ -115,23 +115,23 @@ function Cart(props) {
           <div>
             {books ? (
               books.map((book) => (
-                <div class="cart_item_area">
+                <div className="cart_item_area">
                   <img
                     src={book.Book.titleImage}
                     alt=""
                     style={{ width: "195px", height: "292px" }}
                   />
-                  <div class="cart_area_cart">
-                    <div class="book_details_cart">
+                  <div className="cart_area_cart">
+                    <div className="book_details_cart">
                       <button
-                        class="cart_cancel"
+                        className="cart_cancel"
                         onClick={() => deleteCartItem(book.id)}
                       >
                         {" "}
                         X{" "}
                       </button>
                       <h2> {book.Book.bookName}</h2>
-                      <div class="star_cart">
+                      <div className="star_cart">
                         <svg
                           width="25"
                           height="23"
@@ -200,7 +200,7 @@ function Cart(props) {
                         </p>
                         <img
                           src={cartImage}
-                          class="reviews_cart"
+                          className="reviews_cart"
                           width="21px"
                           height="21px"
                           alt=""
@@ -209,30 +209,30 @@ function Cart(props) {
                         <img
                           src={like}
                           alt=""
-                          class="like_cart"
+                          className="like_cart"
                           width="23px"
                           height="23px"
                         />
                         {book.Book.BookLikeDislike.length}
                       </div>
 
-                      <hr class="line_1" />
+                      <hr className="line_1" />
 
-                      <div class="cart_book_price">
+                      <div className="cart_book_price">
                         <h3> RS.{book.Book.price} </h3>
                         {/* <h4> 2% </h4> */}
-                        <div class="quantity_cart">
-                          <button class="minius_cart"> - </button>
+                        <div className="quantity_cart">
+                          <button className="minius_cart"> - </button>
                           <input
                             name="quantity_value"
                             type="text"
                             value="1"
-                            class="quantity_input"
+                            className="quantity_input"
                           />
-                          <button class="plus_cart"> + </button>
+                          <button className="plus_cart"> + </button>
                         </div>
-                        <div class="procces_area">
-                          <button class="procced_cart_btn"> proceed </button>
+                        <div className="procces_area">
+                          <button className="procced_cart_btn"> proceed </button>
                         </div>
                       </div>
                     </div>
@@ -249,7 +249,7 @@ function Cart(props) {
 
         {/* amount_are */}
 
-        <div class="cart_amount_area">
+        <div className="cart_amount_area">
           <h2> TOTAL: Rs. {total}</h2>
         </div>
 

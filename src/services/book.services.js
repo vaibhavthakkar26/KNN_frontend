@@ -40,10 +40,10 @@ const BookServices = {
   getBookById: async (bookId) => {
     try {
       const res = await axios.get(`${api_url}/books/${bookId}`);
-      console.log("Response", res);
+      console.log("getBookById Response", res);
       return res;
     } catch (error) {
-      console.log("Error", error.response);
+      console.log("getBookById Error", error.response);
       return error.response;
     }
   },
@@ -93,21 +93,80 @@ const BookServices = {
     verifyBy
   ) => {
     try {
-      const res = await axios.post(`${api_url}/books`, {
-        bookName: name,
-        isbn: isbn,
-        pages: pages,
-        description: description,
-        price: price,
-        titleImage: titleImage,
-        createdBy: createdBy,
-        authorId: authorId,
-        verifyBy: verifyBy,
-      });
+      const formData = new FormData();
+      formData.append("bookName", name);
+      formData.append("isbn", isbn);
+      formData.append("pages", pages);
+      formData.append("description", description);
+      formData.append("price", price);
+      formData.append("titleImage", titleImage);
+      formData.append("createdBy", createdBy);
+      formData.append("authorId", authorId);
+      formData.append("verifyBy", verifyBy);
+
+      const res = await axios.post(`${api_url}/books`, formData);
       console.log("createBook Response", res);
       return res;
     } catch (error) {
       console.log("createBook Error", error.response);
+      return error.response;
+    }
+  },
+
+  updateBook: async (
+    id,
+    name,
+    isbn,
+    pages,
+    description,
+    price,
+    titleImage,
+    createdBy,
+    authorId,
+    verifyBy,
+    stock
+  ) => {
+    try {
+      const formData = new FormData();
+      formData.append("bookName", name);
+      formData.append("isbn", isbn);
+      formData.append("pages", pages);
+      formData.append("description", description);
+      formData.append("price", price);
+      formData.append("titleImage", titleImage);
+      formData.append("createdBy", createdBy);
+      formData.append("authorId", authorId);
+      formData.append("verifyBy", verifyBy);
+      formData.append("stock", stock);
+      const res = await axios.put(`${api_url}/books/${id}`, formData);
+      console.log("updateBook Response", res);
+      return res;
+    } catch (error) {
+      console.log("updateBook Error", error.response);
+      return error.response;
+    }
+  },
+
+  createBookCategory: async (bookId, catId) => {
+    try {
+      const res = await axios.post(
+        `${api_url}/books/${bookId}/category/${catId}`
+      );
+      console.log("createBookCategory Response: ", res);
+      return res;
+    } catch (error) {
+      console.log("createBookCategory Error", error.response);
+      return error.response;
+    }
+  },
+
+  deleteBookCategory: async (id) => {
+    try {
+      const res = await axios.delete(`${api_url}/books/category/${id}`);
+      console.log("deleteBookCategory Response: ", res);
+      return res;
+    } catch (error) {
+      console.log("deleteBookCategory Error", error.response);
       return error.response;
     }
   },

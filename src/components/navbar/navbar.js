@@ -134,7 +134,7 @@ function navbar(props) {
               </div>
               <div class="_login_">
                 {" "}
-                <Link to="/Register">
+                <Link to="/register">
                   <h3> Create Account </h3>
                 </Link>{" "}
               </div>

@@ -158,6 +158,83 @@ const UserServices = {
       return error.response;
     }
   },
+
+  getNewUser: async (isVerify) => {
+    try {
+      const res = await axios.get(`${api_url}/users/new?isVerify=${isVerify}`);
+
+      console.log("getNewUser response: ", res);
+      return res;
+    } catch (error) {
+      console.log("getNewUser Error:", error.response);
+      return error.response;
+    }
+  },
+
+  getUserInfo: async (id) => {
+    try {
+      const res = await axios.get(`${api_url}/users/info/${id}`);
+
+      console.log("getUserInfo response: ", res);
+      return res;
+    } catch (error) {
+      console.log("getUserInfo Error:", error.response);
+      return error.response;
+    }
+  },
+
+  verifyUser: async (id, isVerify) => {
+    try {
+      const res = await axios.post(`${api_url}/users/verify`, {
+        userId: id,
+        isVerify: isVerify,
+      });
+
+      console.log("verifyUser response: ", res);
+      return res;
+    } catch (error) {
+      console.log("verifyUser Error:", error.response);
+      return error.response;
+    }
+  },
+
+  getOrder: async (status) => {
+    try {
+      const res = await axios.get(`${api_url}/users/orders?status=${status}`);
+
+      console.log("getOrder response: ", res);
+      return res;
+    } catch (error) {
+      console.log("getOrder Error:", error.response);
+      return error.response;
+    }
+  },
+
+  getOrderById: async (id) => {
+    try {
+      const res = await axios.get(`${api_url}/users/order/details/${id}`);
+
+      console.log("getOrderById response: ", res);
+      return res;
+    } catch (error) {
+      console.log("getOrderById Error:", error.response);
+      return error.response;
+    }
+  },
+
+  orderStatusChange: async (id, status) => {
+    try {
+      const res = await axios.put(
+        `${api_url}/users/orders/${id}?status=${status}`
+      );
+
+      console.log("orderStatusChange response: ", res);
+      return res;
+    } catch (error) {
+      console.log("orderStatusChange Error:", error.response);
+      return error.response;
+    }
+  },
 };
 
 export default UserServices;

@@ -56,7 +56,7 @@ function Discussinside(props) {
   return (
     <div>
       <Header />
-      <div class="main_discuss_form_inside_">
+      <div className="main_discuss_form_inside_">
         {isLoading ? (
           <div style={{ marginLeft: "123px" }}>
             <Loaderring />
@@ -64,49 +64,49 @@ function Discussinside(props) {
         ) : (
           <div>
             {allDiscussion ? (
-              <div class="left_D_F_I">
-                <div class="create_discuss_section_inside">
+              <div className="left_D_F_I">
+                <div className="create_discuss_section_inside">
                   <h2> Loerm Ipsum </h2>
                   <input type="search" placeholder="Type of search " />
-                  <button class="create_discuss_btn_btn">
+                  <button className="create_discuss_btn_btn">
                     {" "}
                     Create Discussion
                   </button>
                 </div>
                 <hr style={{ border: "1px solid rgba(255, 193, 6, 1)" }} />
-                <div class="one_one_heading">
+                <div className="one_one_heading">
                   <h2> {allDiscussion.question} </h2>
-                  <div class="comment_section_discuss_inside">
-                    <div class="p_p_discuss_inside">
+                  <div className="comment_section_discuss_inside">
+                    <div className="p_p_discuss_inside">
                       <img src={allDiscussion.User.profilePicture} alt="" />
                     </div>
-                    <div class="comment_main_discuss">
-                      <div class="edit_section_d_f_I">
-                        <div class="comment_timing_discussion">
+                    <div className="comment_main_discuss">
+                      <div className="edit_section_d_f_I">
+                        <div className="comment_timing_discussion">
                           <h2>{allDiscussion.User.firstName}</h2>
                           <h3>4 Hrs Ago</h3>
                         </div>
-                        <div class="edit_main_discussion">
+                        <div className="edit_main_discussion">
                           <h2>Edit </h2>
                         </div>
                       </div>
-                      <div class="_d_f_i_comment">
+                      <div className="_d_f_i_comment">
                         <h2>{allDiscussion.description}</h2>
                       </div>
                     </div>
                   </div>
-                  <div class="user_comment_section_">
-                    <div class="user_p_p_area">
+                  <div className="user_comment_section_">
+                    <div className="user_p_p_area">
                       <img src={Ellipse} alt="" />
                     </div>
-                    <div class="user_comment_section_di">
+                    <div className="user_comment_section_di">
                       <textarea
                         placeholder="your comments......"
-                        class="comment_user_texT_areA"
+                        className="comment_user_texT_areA"
                         onChange={(e) => setComment(e.target.value)}
                       ></textarea>
                       <br />
-                      <button class="post_comment" onClick={() => onPost()}>
+                      <button className="post_comment" onClick={() => onPost()}>
                         Post Commnet
                       </button>
                     </div>
@@ -116,7 +116,7 @@ function Discussinside(props) {
                     height="130"
                     viewBox="0 0 117 130"
                     fill="none"
-                    class="tri_angle_discuss_inside"
+                    className="tri_angle_discuss_inside"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -128,16 +128,16 @@ function Discussinside(props) {
 
                   {allDiscussion.DiscussionAnswer.length > 0 ? (
                     allDiscussion.DiscussionAnswer.map((ans) => (
-                      <div class="users_comment_sec_d_f_i">
-                        <div class="main_u_c_d_f_i">
+                      <div className="users_comment_sec_d_f_i">
+                        <div className="main_u_c_d_f_i">
                           <img src={ans.User.profilePicture} alt="" />
                         </div>
-                        <div class="comment_name_area">
-                          <div class="user_name_dfi_area">
+                        <div className="comment_name_area">
+                          <div className="user_name_dfi_area">
                             <h1>{ans.User.firstName} </h1>
                             <p>{ans.answer}</p>
                           </div>
-                          <div class="edit_delete_section_d_inside">
+                          <div className="edit_delete_section_d_inside">
                             <p> Edit </p>
                             <p> Delete </p>
                             <p> 3 Likes</p>
@@ -174,7 +174,7 @@ function Discussinside(props) {
           </div>
         )}
 
-        <div class="right_D_F_I">
+        <div className="right_D_F_I">
           {/* <!-- dynamic part start from h1 --> */}
         </div>
       </div>

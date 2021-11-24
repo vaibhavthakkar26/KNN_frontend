@@ -58,10 +58,10 @@ function Cretediscuss(props) {
   return (
     <div>
       <Header />
-      <div class="create_disussion_main">
+      <div className="create_disussion_main">
         {/* <!-- left side --> */}
-        <div class="left_create_disucssion">
-          <div class="create_disucssion_head">
+        <div className="left_create_disucssion">
+          <div className="create_disucssion_head">
             <p> Create Disussion</p>
             <hr
               style={{
@@ -71,11 +71,11 @@ function Cretediscuss(props) {
             />
           </div>
 
-          <div class="cate_drop_down">
+          <div className="cate_drop_down">
             <label> Select Category </label>
             <br />
             <select
-              class="category_book_topic"
+              className="category_book_topic"
               onChange={(e) => setCategoryId(e.target.value)}
             >
               {isLoading ? (
@@ -96,35 +96,35 @@ function Cretediscuss(props) {
             required
           />
 
-          <div class="topic_area_cd">
+          <div className="topic_area_cd">
             <p> Topic</p>
             <textarea
               placeholder="topic you want to discuss"
-              class="text_area_cd"
+              className="text_area_cd"
               onChange={(e) => setTitle(e.target.value)}
             ></textarea>
           </div>
 
-          <div class="Details_create_disussion">
+          <div className="Details_create_disussion">
             <p>Details</p>
             <textarea
-              class="details_cd_area"
+              className="details_cd_area"
               placeholder="Details of your discussion"
               onChange={(e) => setDescription(e.target.value)}
             ></textarea>
           </div>
 
-          <div class="create_disussion_create_disussion">
-            <button class="create_dis_btn" onClick={() => onCreate()}>
+          <div className="create_disussion_create_disussion">
+            <button className="create_dis_btn" onClick={() => onCreate()}>
               Create Discussionn{" "}
             </button>
           </div>
         </div>
-        <div class="right_side_cd">
+        <div className="right_side_cd">
           <h2> category </h2>
           <hr />
           {/* categorey list will be in h3  */}
-          <div class="create_discuss_cat_list">
+          <div className="create_discuss_cat_list">
             <h3> list one </h3>
             <h3> list two </h3>
           </div>

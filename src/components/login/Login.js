@@ -8,7 +8,7 @@ import Loaderring from "../../comman/Loader";
 import LoginImage from "../../assets/image/signin.jpg";
 import CommanService from "../../services/comman.service";
 import { Link } from "react-router-dom";
-
+import eye from "../../assets/image/eye 1.svg";
 toast.configure();
 function Login(props) {
   const [email, setemail] = useState("");
@@ -16,6 +16,7 @@ function Login(props) {
   const [password, setpassword] = useState("");
   const [passworderror, setpassworderror] = useState("");
   const [isLoading, setisLoading] = useState(false);
+  const [loginpasswordshown, setloginpasswordshown] = useState(false);
 
   let isFormValid = true;
   const loginvalidation = () => {
@@ -83,23 +84,27 @@ function Login(props) {
     // setisLoading(false);
   };
 
+  const ToggleHandle=()=>{
+    setloginpasswordshown(loginpasswordshown?false :true)
+  }
+
   return (
     <div>
-      <div class="sign_in">
-        <div class="sign_in_main">
-          <div class="Login_imagesec">
-            <img class="Login_image" src={LoginImage} alt="" />
+      <div className="sign_in">
+        <div className="sign_in_main">
+          <div className="Login_imagesec">
+            <img className="Login_image" src={LoginImage} alt="" />
           </div>
-          <div class="Login_section">
-            <h2 class="Login_head"> Sign in to your Account </h2>
+          <div className="Login_section">
+            <h2 className="Login_head"> Sign in to your Account </h2>
             <br />
-            <div class="email_password_section">
-              <div class="email_ID">
+            <div className="email_password_section">
+              <div className="email_ID">
                 <label>Email id</label> <br />
                 <input
                   type="email"
                   placeholder="Your Email address"
-                  class="input_signin"
+                  className="input_signin"
                   onChange={(e) => setemail(e.target.value)}
                   required
                 />
@@ -115,15 +120,16 @@ function Login(props) {
                   {emailerror}
                 </p>
               </div>
-              <div>
+              <div style={{position:"relative"}}>
                 <label> password </label> <br />
                 <input
-                  type="password"
+                  type={loginpasswordshown ? "text" : "password"}
                   placeholder="Your password"
-                  class="input_signin"
+                  className="input_signin"
                   onChange={(e) => setpassword(e.target.value)}
                   required
                 />
+                <img src={eye} alt="" className="login_eye" onClick={ToggleHandle}/>
                 <p
                   style={{
                     position: "relative",
@@ -135,9 +141,9 @@ function Login(props) {
                   {passworderror}
                 </p>
               </div>
-              <div class="cheackBox_section">
-                <input type="checkbox" class="Login_Remember" /> Remember me
-                <Link to="/forgotpassword" class="Login_restpassword">
+              <div className="cheackBox_section">
+                <input type="checkbox" className="Login_Remember" /> Remember me
+                <Link to="/forgotpassword" className="Login_restpassword">
                   {" "}
                   Forgot Password ?
                 </Link>
@@ -147,15 +153,15 @@ function Login(props) {
                   <Loaderring />
                 </div>
               ) : (
-                <button class="Login_button" onClick={onLogin}>
+                <button className="Login_button" onClick={onLogin}>
                   {" "}
                   Sign in{" "}
                 </button>
               )}
-              <p class="Signin_footer_text">
+              <p className="Signin_footer_text">
                 {" "}
                 Don't have an account ?{" "}
-                <Link to="/Register">
+                <Link to="/register">
                   {" "}
                   <span
                     style={{

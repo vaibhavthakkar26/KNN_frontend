@@ -52,9 +52,9 @@ function Discuss(props) {
       <Header />
       {/* <!-- LEFT SIDE PART STATRT FROM HERE --> */}
       <div style={{ display: "flex" }}>
-        <div class="cate_gories">
-          <div class="discussion_categories_main">
-            <h2 class="categories_disscussion_larea"> Categories </h2>
+        <div className="cate_gories">
+          <div className="discussion_categories_main">
+            <h2 className="categories_disscussion_larea"> Categories </h2>
             <hr style={{ border: "1px solid #D1D1D1" }} />
             {isLoading ? (
               <div style={{ marginLeft: "123px" }}>
@@ -75,32 +75,32 @@ function Discuss(props) {
 
         <div>
           {/* <!-- right side top search and button part start --> */}
-          <div class="main_all_discussion">
-            <div class="discussion_search_area">
+          <div className="main_all_discussion">
+            <div className="discussion_search_area">
               <h2> All Discussion </h2>
-              <div class="search_area_discussion">
+              <div className="search_area_discussion">
                 <input
                   type="search"
                   placeholder="Type to search"
-                  class="discussion_search"
+                  className="discussion_search"
                 />
                 {/* <!--  for cvg position: relative; left: -31px; top: 5px; --> */}
               </div>
 
               <Link to="/creatediscuss">
                 {" "}
-                <button class="ask_que"> create discussion </button>
+                <button className="ask_que"> create discussion </button>
               </Link>
             </div>
             <hr style={{ border: "1px solid #FFC106" }} />
-            <div class="category_of_discussion">
+            <div className="category_of_discussion">
               <div>
                 <p> {allDiscussion.length} question </p>
               </div>
-              <div class="discussion_button">
-                <button class="discuss_button_1"> Newst </button>
-                <button class="discuss_button_2"> Most Popular </button>
-                <button class="discuss_button_3"> Not Answered </button>
+              <div className="discussion_button">
+                <button className="discuss_button_1"> Newst </button>
+                <button className="discuss_button_2"> Most Popular </button>
+                <button className="discuss_button_3"> Not Answered </button>
               </div>
             </div>
           </div>
@@ -112,24 +112,24 @@ function Discuss(props) {
             </div>
           ) : (
             allDiscussion.map((discussion) => (
-              <div class="discussion_area_main">
-                <div class="discuss_part_">
+              <div className="discussion_area_main">
+                <div className="discuss_part_">
                   <img
                     src={discussion.titleImage}
                     alt=""
-                    class="discuss_image"
+                    className="discuss_image"
                     onClick={() => selectDiscussion(discussion.id)}
                   />
                 </div>
-                <div class="discussion_text_area">
-                  <div class="first_section_discuss_area">
-                    <div class="discuss_profile_area">
+                <div className="discussion_text_area">
+                  <div className="first_section_discuss_area">
+                    <div className="discuss_profile_area">
                       <img src={discussion.User.profilePicture} alt="" />
                     </div>
-                    <div class="discuss_creater_details">
+                    <div className="discuss_creater_details">
                       <p>{discussion.User.firstName}</p>
-                      <div class="svg_and_names">
-                        <div class="disucss_svg_part">
+                      <div className="svg_and_names">
+                        <div className="disucss_svg_part">
                           {/* <svg
                             width="12"
                             height="12"
@@ -192,33 +192,33 @@ function Discuss(props) {
                           </svg> */}
                           <p>{discussion.User.address}</p>
                         </div>
-                        {/* <!-- <div class="name_dicussion">
+                        {/* <!-- <div className="name_dicussion">
                                 
                             </div>  --> */}
                       </div>
                     </div>
                   </div>
-                  <div class="text_area_heading">
+                  <div className="text_area_heading">
                     <h3>{discussion.question}</h3>
                     <p>{discussion.description}</p>
                   </div>
 
-                  <div class="like_comment_discussion_area">
-                    <div class="unlike_like_area">
-                      <div class="like_area_discussion">
+                  <div className="like_comment_discussion_area">
+                    <div className="unlike_like_area">
+                      <div className="like_area_discussion">
                         <p> 1258 </p>
                       </div>
-                      <div class="unlike">
+                      <div className="unlike">
                         {/* <!-- svg here  --> */}
                         <p> 3 </p>
                       </div>
                     </div>
 
-                    <div class="comment_views_area">
-                      <div class="replies_area">
+                    <div className="comment_views_area">
+                      <div className="replies_area">
                         <p> 200 replies</p>
                       </div>
-                      <div class="discussion_viewer_area">
+                      <div className="discussion_viewer_area">
                         <p> 2136 views</p>
                       </div>
                     </div>

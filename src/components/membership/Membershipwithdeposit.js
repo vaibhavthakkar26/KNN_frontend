@@ -87,8 +87,8 @@ function Membershipwithdeposit(props) {
   return (
     <div>
       <Header/>
-      <div class="with_deposit_main">
-        <div class="deposit_with_deposit_heading">
+      <div className="with_deposit_main">
+        <div className="deposit_with_deposit_heading">
           <h1>With Deposit</h1>{" "}
           <p>
             **Please pay Rs. 1200 [Rs. 1000 as deposit & Rs. 200 as membership
@@ -96,11 +96,11 @@ function Membershipwithdeposit(props) {
           </p>
         </div>
 
-        <div class="payment_with_deposit">
+        <div className="payment_with_deposit">
           <h2> For payment, send Nrs. 1200 to esewa or Khalti </h2>
         </div>
 
-        <div class="payment_information_deposit">
+        <div className="payment_information_deposit">
           <h2> esewa/Khalti ID: 9861446103 </h2>
           {/* <input type="checkbox" value="" name="" />
           <label>
@@ -110,13 +110,13 @@ function Membershipwithdeposit(props) {
           </label> */}
         </div>
 
-        <div class="complete_btn_area_with_deposit">
+        <div className="complete_btn_area_with_deposit">
           {isLoading ? (
             <div style={{ textAlign: "center" }}>
               <Loaderring />
             </div>
           ) : (
-            <button class="complete_btn_" onClick={onComplete}>
+            <button className="complete_btn_" onClick={onComplete}>
               {" "}
               Complete{" "}
             </button>

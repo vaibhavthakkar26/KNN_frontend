@@ -8,6 +8,7 @@
 .main_book_str{
     width: 223px;
     margin-top: 49px;
+    position: relative;
     margin-right: 55px;
 }
 
@@ -20,15 +21,12 @@
     height: 37px;
     align-items: center;
     border-radius:12px;
-    /* position: relative;
-    left: 27px;
-    top: 19px; */
     background: #FFFFFF;
     color: #0055B3;
     display: flex;
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 25px;
+    left: 25px;
 }
 
 .books_main_book_header h2{

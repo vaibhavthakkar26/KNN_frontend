@@ -10,25 +10,25 @@ function Membership(){
     return(
         <div>
             <Header />
-            <div class="main_member_area">
-                <div class="first_section_membership">
+            <div className="main_member_area">
+                <div className="first_section_membership">
                     <h1>With Deposit</h1>
                     <p>**Please pay Rs.1200 [Rs.1000 as deposit Rs.200 as membership charge] in order become a member of KNN
                     community.</p>
                 </div>
-                <button class="checkout_payment_btn"><h1>Choose your payment option</h1></button>
-                <div class="payment_platfrom">
+                <button className="checkout_payment_btn"><h1>Choose your payment option</h1></button>
+                <div className="payment_platfrom">
                     <img src={sewa} alt="" width="180px" height="85px"/>
                     <img src={khalti} alt="" width="221px" height="120px"/>
                     <img src={Ips} alt=""  width="230px" height="66px"/>
                     <img src={Ime} alt="" width="163px" height="163px"/>
                 </div>
-                <div class="address_section">
-                <input type="text" class="address_input" placeholder="Address to collect the books from*" /> 
-                <input type="text" class="phone_input" placeholder="Your Phone Number*"/>
+                <div className="address_section">
+                <input type="text" className="address_input" placeholder="Address to collect the books from*" /> 
+                <input type="text" className="phone_input" placeholder="Your Phone Number*"/>
                 </div>
-                <button class="become_member_btn"><h3>Become a member</h3></button>
-                <div class="member_text">
+                <button className="become_member_btn"><h3>Become a member</h3></button>
+                <div className="member_text">
                 <p>Do you have 3 Books?<span style={{color:"blue"}}>With Books</span></p>
                 <a href="#"> <u> privacy policy </u>  and  <u> Terms conditions </u> </a> 
                 </div>

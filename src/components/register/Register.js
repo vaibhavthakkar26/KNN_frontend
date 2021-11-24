@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import ErrorToast from "../../comman/ErrorToast";
 import "./Register.css";
 import Loaderring from "../../comman/Loader";
+import eye from "../../assets/image/eye 1.svg";
 toast.configure();
 function Register(props) {
   const [fullname, setfullname] = useState("");
@@ -23,6 +24,8 @@ function Register(props) {
   const [Confirmpassword, setConfirmpassword] = useState("");
   const [confirmpwderror, setconfirmpwderror] = useState("");
   const [isLoading, setisLoading] = useState(false);
+  const [passwordShown, setPasswordShown] = useState(false);
+  const [confitmpasswordShown,setconfitmpasswordShown]=useState(false);
   // const [isFormValid,setisFormValid]=useState();
 
   let isFormValid = true;
@@ -104,6 +107,15 @@ function Register(props) {
     }
   };
 
+
+  const togglePasswordVisiblity=()=>{
+    setPasswordShown(passwordShown ? false : true);
+  }
+
+  const confirmPasswordVisiblity=()=>{
+    setconfitmpasswordShown(confitmpasswordShown ? false: true)
+  }
+
   return (
     <div>
       <div>
@@ -155,21 +167,25 @@ function Register(props) {
                   onChange={(e) => setaddress(e.target.value)}
                 />
                 <br />
+                <div style={{position:"relative"}}>
                 <input
-                  type="password"
-                  placeholder="Password"
+                  type={passwordShown ? "text" : "password"}
+                  placeholder="Password" 
                   class="input_signup"
                   onChange={(e) => setpassword(e.target.value)}
                 />
+                  <img src={eye} alt="" class="register_eye" onClick={togglePasswordVisiblity}/>
                 <br />
                 {pwderror}
                 <input
-                  type="password"
+                  type={confitmpasswordShown ? "text" : "password"}
                   placeholder="Confirm Password"
                   class="input_signup"
                   onChange={(e) => setConfirmpassword(e.target.value)}
                 />
+                <img src={eye} alt="" class="confrim_password_eye" onClick={confirmPasswordVisiblity}/>
                 <br />
+                </div>
                 {confirmpwderror}
                 {/* <Link to=""> */}
                 {isLoading ? (

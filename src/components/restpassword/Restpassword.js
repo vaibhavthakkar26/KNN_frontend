@@ -12,6 +12,7 @@ toast.configure();
 function Restpassword(props) {
   const [isLoading, setisLoading] = useState(false);
   const [password, setPassword] = useState("");
+  const [restpasswordshown, setrestpasswordshown] = useState(false);
   const { userId } = queryString.parse(props.location.search);
   const { nonce } = queryString.parse(props.location.search);
 
@@ -26,6 +27,10 @@ function Restpassword(props) {
       ErrorToast(reset.data.message);
     }
     setisLoading(false);
+  }
+
+  const TogglePasswordHandler=()=>{
+    setrestpasswordshown(restpasswordshown ? false:true)
   }
   return (
     <div>
@@ -43,12 +48,12 @@ function Restpassword(props) {
             <div class="res_pass_password">
               <label> new password</label>
               <input
-                type="password"
+                type={restpasswordshown?"text":"password"}
                 placeholder="your new password"
                 class="input_signup_rp"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <img src={eye} alt="" class="eye_svg_ress_pass" />
+              <img src={eye} alt="" class="eye_svg_ress_pass" onClick={TogglePasswordHandler}/>
             </div>
             <br />
             {/* <div class="res_pass_confrimpassword">

@@ -84,8 +84,8 @@ function Bookin(props) {
           {book ? (
             <div>
               {" "}
-              <diV class="book_inside_main">
-                <div class="image_book_inside">
+              <diV className="book_inside_main">
+                <div className="image_book_inside">
                   <img
                     src={book.titleImage}
                     alt={book.bookName}
@@ -94,10 +94,10 @@ function Bookin(props) {
                     style={{border:"1px solid black"}}
                   />
                 </div>
-                <div class="book_inside_description">
-                  <div class="child_one_description">
+                <div className="book_inside_description">
+                  <div className="child_one_description">
                     <h1> {book.bookName}</h1>
-                    <div class="star_cart" style={{ margin: "0" }}>
+                    <div className="star_cart" style={{ margin: "0" }}>
                       <svg
                         width="25"
                         height="23"
@@ -161,7 +161,7 @@ function Bookin(props) {
                       <p> {book.avgRating}</p>
                       <img
                         src={cartImage}
-                        class="reviews_cart"
+                        className="reviews_cart"
                         width="21px"
                         height="21px"
                         alt=""
@@ -170,25 +170,25 @@ function Bookin(props) {
                       <img
                         src={like}
                         alt=""
-                        class="like_cart"
+                        className="like_cart"
                         width="23px"
                         height="23px"
                       />
                       {book.BookLikeDislike.length}
-                      <div class="stocks_update_bookinside">
+                      <div className="stocks_update_bookinside">
                         <h4>{book.stock > 0 ? "in Stocks" : "out of Stock"}</h4>
                       </div>
                     </div>
                   </div>
-                  <div class="child_two_description">
+                  <div className="child_two_description">
                     <p>{book.description}</p>
                   </div>
-                  <div class="writter_area_book_inside">
+                  <div className="writter_area_book_inside">
                     <img
                       src={book.BookAuthor.profilePicture}
                       alt={book.BookAuthor.name}
                     />
-                    <div class="writter_name">
+                    <div className="writter_name">
                       <h2> Written By:</h2>
                       <p> {book.BookAuthor.name}</p>
                     </div>
@@ -196,22 +196,22 @@ function Bookin(props) {
                   <hr
                     style={{ border: "1px solid #C4C4C4", marginTop: "40px" }}
                   />
-                  <div class="cart_book_price">
+                  <div className="cart_book_price">
                     <h2> RS.{book.price} </h2>
                     {/* <h4> 2% </h4> */}
-                    <div class="quantity_cart">
-                      <button class="minius_cart"> - </button>
+                    <div className="quantity_cart">
+                      <button className="minius_cart"> - </button>
                       <input
                         name="quantity_value"
                         type="text"
                         value="1"
-                        class="quantity_input"
+                        className="quantity_input"
                       />
-                      <button class="plus_cart"> + </button>
+                      <button className="plus_cart"> + </button>
                     </div>
-                    <div class="procces_area">
+                    <div className="procces_area">
                       <button
-                        class="procced_cart_btn"
+                        className="procced_cart_btn"
                         onClick={() => addToCart()}
                       >
                         {" "}
@@ -221,50 +221,50 @@ function Bookin(props) {
                   </div>
                 </div>
               </diV>
-              <div class="book_details">
-                <div class="main_details_book_indi">
-                  <div class="Details_main_head">
+              <div className="book_details">
+                <div className="main_details_book_indi">
+                  <div className="Details_main_head">
                     <h2> Details </h2>
                   </div>
-                  <div class="book_info_book_details">
-                    <div class="container_book_inside_">
-                      <div class="boot_deatils_category">
-                        <div class="heading_titles">
+                  <div className="book_info_book_details">
+                    <div className="container_book_inside_">
+                      <div className="boot_deatils_category">
+                        <div className="heading_titles">
                           <h2> Book </h2>
                         </div>
-                        <div class="details_details_user">
+                        <div className="details_details_user">
                           <p> {book.bookName} </p>
                         </div>
                       </div>
-                      <div class="boot_deatils_category">
-                        <div class="heading_titles">
+                      <div className="boot_deatils_category">
+                        <div className="heading_titles">
                           <h2> Author </h2>
                         </div>
-                        <div class="details_details_user">
+                        <div className="details_details_user">
                           <p> {book.BookAuthor.name} </p>
                         </div>
                       </div>
-                      <div class="boot_deatils_category">
-                        <div class="heading_titles">
+                      <div className="boot_deatils_category">
+                        <div className="heading_titles">
                           <h2> ISBN </h2>
                         </div>
-                        <div class="details_details_user">
+                        <div className="details_details_user">
                           <p> {book.isbn} </p>
                         </div>
                       </div>
-                      <div class="boot_deatils_category">
-                        <div class="heading_titles">
+                      <div className="boot_deatils_category">
+                        <div className="heading_titles">
                           <h2> Book Format </h2>
                         </div>
-                        <div class="details_details_user">
+                        <div className="details_details_user">
                           <p> {book.pages} Pages </p>
                         </div>
                       </div>
-                      <div class="boot_deatils_category">
-                        <div class="heading_titles">
+                      <div className="boot_deatils_category">
+                        <div className="heading_titles">
                           <h2> Description </h2>
                         </div>
-                        <div class="details_details_user">
+                        <div className="details_details_user">
                           <p> {book.description} </p>
                         </div>
                       </div>

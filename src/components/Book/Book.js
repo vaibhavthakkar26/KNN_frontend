@@ -46,14 +46,14 @@ function Book(props) {
       <Header />
       <div style={{ display: "flex", marginTop: "63px" }}>
         {/* <!-- left --> */}
-        <div class="main_left_side">
-          <div class="left-book-main_area">
-            <div class="books_categories_filter_area">
-              <h2 class="filter_book_text"> Filter Options </h2>
-              <div class="filter_categories">
-                <h1 class="cat_book_cat"> Categories </h1>
+        <div className="main_left_side">
+          <div className="left-book-main_area">
+            <div className="books_categories_filter_area">
+              <h2 className="filter_book_text"> Filter Options </h2>
+              <div className="filter_categories">
+                <h1 className="cat_book_cat"> Categories </h1>
                 <hr style={{ border: "1px solid #FFFFFF" }} />
-                <div class="categorey_book_main_book">
+                <div className="categorey_book_main_book">
                   {isLoading ? (
                     <div style={{ marginLeft: "123px" }}>
                       <Loaderring />
@@ -71,16 +71,16 @@ function Book(props) {
           </div>
           {/* <!-- image section --> */}
           <div>
-            <img src={bestseller} alt="" class="best_seller_image" />
+            <img src={bestseller} alt="" className="best_seller_image" />
           </div>
         </div>
         {/* <!-- right --> */}
-        <div class="right_main_side">
+        <div className="right_main_side">
           {/* <!-- BOOK AREA RIGHT SIDE --> */}
-          <div class="books_main_book_header">
+          <div className="books_main_book_header">
             <h2> BOOKS</h2>
           </div>
-          <div class="main_book_right">
+          <div className="main_book_right">
             {/* <!-- book structure here --> */}
 
             {isBookLoading ? (
@@ -89,16 +89,16 @@ function Book(props) {
               </div>
             ) : (
               books.map((book) => (
-                <div class="main_book_str">
+                <div className="main_book_str">
                   <img
                     src={book.titleImage}
-                    class="book_book"
+                    className="book_book"
                     alt="Book"
                     onClick={() => onBookSelect(book.id)}
                   />
 
-                  <div class="book_rating_area">
-                    <div class="star_book">
+                  <div className="book_rating_area">
+                    <div className="star_book">
                       <svg
                         width="17"
                         height="16"
@@ -117,15 +117,15 @@ function Book(props) {
                         />
                       </svg>
                     </div>
-                    <div class="rating_number">
+                    <div className="rating_number">
                       <h2> {book.avgRating === null ? 0.0 : book.avgRating}</h2>
                     </div>
                   </div>
 
-                  <div class="book_information_book">
+                  <div className="book_information_book">
                     <h3> {book.categoryName} </h3>
                     <p> {book.bookName}</p>
-                    <button class="price_book_main"> Rs.{book.price}</button>
+                    <button className="price_book_main"> Rs.{book.price}</button>
                   </div>
                 </div>
               ))

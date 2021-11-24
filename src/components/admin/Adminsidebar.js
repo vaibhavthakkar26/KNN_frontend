@@ -27,20 +27,30 @@ function Adminsidebar(props) {
           <Link to="/admindashboard">
             <li> Dashboard </li>
           </Link>
-          <li> Users </li>
+          <Link to="/adminUsersList">
+            <li> Users </li>
+          </Link>
           <Link to="/adminbloglist">
             <li> Blog </li>
           </Link>
           <Link to="/adminevent">
             <li> Event </li>
           </Link>
-          <li> Discussion Forum </li>
-          <li> Category</li>
-          <li> Subscription</li>
+          <Link to="/admindiscussion">
+            <li> Discussion Forum </li>
+          </Link>
+          <Link to="/admincategorey">
+            <li> Category</li>
+          </Link>
+          <Link to="/adminsubscription">
+            <li> Subscription</li>
+          </Link>
           <Link to="/adminbooklist">
             <li> Book</li>
           </Link>
-          <li> order </li>
+          <Link to="/adminOrderList">
+            <li> order </li>
+          </Link>
         </ul>
       </div>
     </div>
